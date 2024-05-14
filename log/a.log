@@ -1,0 +1,66 @@
+
+01/03/22 08:51:01 INFO   :.main: *************** RSVP AG ent started ***************
+02/03/22 08:51:01 INFO   :...locate_confiG File: Specified confiG uration file: /u/user10/rsvpd1.conf
+02/03/22 08:51:01 INFO   :.main: UsinG  loG  level 511
+02/03/22 08:51:01 INFO   :..settcpimaG e: G et TCP imaG es rc - EDC8112I Operation not supported on socket.
+02/03/22 08:51:01 INFO   :..settcpimaG e: Associate with TCP/IP imaG e name = TCPCS
+02/03/22 08:51:02 INFO   :..reG _process: reG isterinG  process with the system
+02/03/22 08:51:02 INFO   :..reG _process: attempt OS/390 reG istration
+02/03/22 08:51:02 INFO   :..reG _process: return from reG istration rc=0
+04/03/22 08:51:06 TRACE  :...read_physical_netif: Home list entries returned = 7
+04/03/22 08:51:06 INFO   :...read_physical_netif: index #0, interface VLINK1 has address 129.1.1.1, ifidx 0
+04/03/22 08:51:06 INFO   :...read_physical_netif: index #1, interface TR1 has address 9.37.65.139, ifidx 1
+04/03/22 08:51:06 INFO   :...read_physical_netif: index #2, interface LINK11 has address 9.67.100.1, ifidx 2
+04/03/22 08:51:06 INFO   :...read_physical_netif: index #3, interface LINK12 has address 9.67.101.1, ifidx 3
+04/03/22 08:51:06 INFO   :...read_physical_netif: index #4, interface CTCD0 has address 9.67.116.98, ifidx 4
+04/03/22 08:51:06 INFO   :...read_physical_netif: index #5, interface CTCD2 has address 9.67.117.98, ifidx 5
+04/03/22 08:51:06 INFO   :...read_physical_netif: index #6, interface LOOPBACK has address 127.0.0.1, ifidx 0
+04/03/22 08:51:06 INFO   :....mailslot_create: creatinG  mailslot for timer
+04/03/22 08:51:06 INFO   :...mailbox_reG ister: mailbox allocated for timer
+05/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP
+05/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp
+05/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP via UDP
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp-udp
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 TRACE  :..entity_initialize: interface 129.1.1.1, entity for rsvp allocated and initialized
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP via UDP
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp-udp
+06/03/22 08:51:06 TRACE  :..entity_initialize: interface 9.37.65.139, entity for rsvp allocated and initialized
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP via UDP
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp-udp
+06/03/22 08:51:06 TRACE  :..entity_initialize: interface 9.67.100.1, entity for rsvp allocated and initialized
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP via UDP
+06/03/22 08:51:06 WARNING :.....mailslot_create: setsockopt(MCAST_ADD) failed - EDC8116I Address not available.
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp-udp
+06/03/22 08:51:06 TRACE  :..entity_initialize: interface 9.67.101.1, entity for rsvp allocated and initialized
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP via UDP
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp-udp
+06/03/22 08:51:06 TRACE  :..entity_initialize: interface 9.67.116.98, entity for rsvp allocated and initialized
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp
+06/03/22 08:51:06 INFO   :.....mailslot_create: creatinG  mailslot for RSVP via UDP
+06/03/22 08:51:06 INFO   :....mailbox_reG ister: mailbox allocated for rsvp-udp
+06/03/22 08:51:06 TRACE  :..entity_initialize: interface 9.67.117.98, entity for rsvp allocated and initialized
