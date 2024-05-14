@@ -1,7 +1,9 @@
 use astra_logger_rs::analyser::SystemInfo;
+use astra_logger_rs::formatter::Logs;
 use astra_logger_rs::scanner::LogStats;
 use clap::Parser;
-use std::io::BufRead;
+use std::fs::File;
+use std::io::{BufRead, BufReader};
 use std::path::PathBuf;
 
 #[derive(Parser, Debug)]
@@ -17,6 +19,9 @@ struct Args {
 
     #[arg(short = 's', long)]
     system_info: bool,
+
+    #[arg(short = 'j', long)]
+    output_json: Option<String>,
 }
 
 fn main() {
@@ -28,6 +33,7 @@ fn main() {
     }
 
     let mut log_stats = LogStats::new();
+    let mut formatter = Logs::new();
 
     if args.paths.is_empty() {
         eprintln!("No paths provided");
@@ -36,9 +42,9 @@ fn main() {
 
     for path in &args.paths {
         if path.is_file() {
-            analyze_file(path, &mut log_stats, &args.pattern);
+            analyze_file(path, &mut log_stats, &mut formatter, &args.pattern);
         } else if path.is_dir() {
-            analyze_directory(path, &mut log_stats, &args.pattern);
+            analyze_directory(path, &mut log_stats, &mut formatter, &args.pattern);
         } else {
             eprintln!("Invalid path: {}", path.display());
             return;
@@ -46,16 +52,25 @@ fn main() {
     }
 
     log_stats.print_stats();
+
+    if let Some(output_path) = args.output_json {
+        if let Err(err) = formatter.format_to_json(&output_path) {
+            eprintln!("Error formatting log stats to JSON: {}", err);
+        } else {
+            println!("Log stats formatted to JSON and saved to {}", output_path);
+        }
+    }
 }
 
-fn analyze_file(path: &PathBuf, log_stats: &mut LogStats, pattern: &str) {
-    if let Ok(file) = std::fs::File::open(path) {
-        let reader = std::io::BufReader::new(file);
+fn analyze_file(path: &PathBuf, log_stats: &mut LogStats, formatter: &mut Logs, pattern: &str) {
+    if let Ok(file) = File::open(path) {
+        let reader = BufReader::new(file);
 
         for line in reader.lines() {
             if let Ok(line) = line {
                 if pattern.is_empty() || line.contains(pattern) {
                     log_stats.analyze_log_line(&line);
+                    formatter.analyze_log_line(&line);
                 }
             }
         }
@@ -64,12 +79,17 @@ fn analyze_file(path: &PathBuf, log_stats: &mut LogStats, pattern: &str) {
     }
 }
 
-fn analyze_directory(path: &PathBuf, log_stats: &mut LogStats, pattern: &str) {
+fn analyze_directory(
+    path: &PathBuf,
+    log_stats: &mut LogStats,
+    formatter: &mut Logs,
+    pattern: &str,
+) {
     for entry in path.read_dir().expect("Failed to read directory") {
         let entry = entry.expect("Failed to read entry");
         let path = entry.path();
         if path.is_file() {
-            analyze_file(&path, log_stats, pattern);
+            analyze_file(&path, log_stats, formatter, pattern);
         }
     }
 }
