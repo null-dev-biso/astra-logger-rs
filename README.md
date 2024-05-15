@@ -25,5 +25,5 @@ Options:
 ```
 
 1. Async logging + recursive algorythm ✔
-2. Format on json with path and date
+2. Format on json with path and date ✔
 3. Beatiful math graph after system details

@@ -17,7 +17,7 @@ pub enum LogFormatter {
 pub struct LogEntry {
     pub level: LogFormatter,
     pub message: String,
-    pub date: String, // Изменили тип на String
+    pub date: String,
     pub file_path: PathBuf,
 }
 
