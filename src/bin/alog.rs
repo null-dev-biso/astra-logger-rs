@@ -1,4 +1,3 @@
-use astra_logger_rs::analyser::SystemInfo;
 use astra_logger_rs::formatter::Logs;
 use astra_logger_rs::scanner::LogStats;
 use clap::Parser;
@@ -12,7 +11,6 @@ struct Args {
     /// Путь к файлу или директории с логами
     #[arg(short, long)]
     paths: Vec<PathBuf>,
-
     /// Регулярное выражение для фильтрации строк логов
     #[arg(short = 'l', long, default_value = "")]
     pattern: String,
@@ -26,11 +24,6 @@ struct Args {
 
 fn main() {
     let args = Args::parse();
-
-    if args.system_info {
-        print_system_info();
-        return;
-    }
 
     let mut log_stats = LogStats::new();
     let mut formatter = Logs::new();
@@ -92,12 +85,4 @@ fn analyze_directory(
             analyze_file(&path, log_stats, formatter, pattern);
         }
     }
-}
-
-fn print_system_info() {
-    let system_info = SystemInfo::new();
-
-    println!("Total Memory: {} bytes", system_info.get_total_memory());
-    println!("Free Memory: {} bytes", system_info.get_free_memory());
-    println!("CPU Load: {:.2}%", system_info.get_cpu_load());
 }
