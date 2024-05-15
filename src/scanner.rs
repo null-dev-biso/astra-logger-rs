@@ -19,7 +19,7 @@ impl LogStats {
         }
     }
 
-    pub fn analyze_log_line(&mut self, line: &str) {
+    pub async fn analyze_log_line(&mut self, line: &str) {
         self.total_messages += 1;
 
         let info_regex = Regex::new(r"(?i)info").unwrap();

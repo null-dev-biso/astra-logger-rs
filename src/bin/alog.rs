@@ -20,7 +20,8 @@ struct Args {
     output_json: Option<String>,
 }
 
-fn main() {
+#[tokio::main]
+async fn main() {
     let args = Args::parse();
 
     let mut log_stats = LogStats::new();
@@ -33,9 +34,9 @@ fn main() {
 
     for path in &args.paths {
         if path.is_file() {
-            analyze_file(path, &mut log_stats, &mut formatter, &args.pattern);
+            analyze_file(path, &mut log_stats, &mut formatter, &args.pattern).await;
         } else if path.is_dir() {
-            analyze_directory(path, &mut log_stats, &mut formatter, &args.pattern);
+            analyze_directory(path, &mut log_stats, &mut formatter, &args.pattern).await;
         } else {
             eprintln!("Invalid path: {}", path.display());
             return;
@@ -45,7 +46,7 @@ fn main() {
     log_stats.print_stats();
 
     if let Some(output_path) = args.output_json {
-        if let Err(err) = formatter.format_to_json(&output_path) {
+        if let Err(err) = formatter.format_to_json(&output_path).await {
             eprintln!("Error formatting log stats to JSON: {}", err);
         } else {
             println!("Log stats formatted to JSON and saved to {}", output_path);
@@ -53,15 +54,20 @@ fn main() {
     }
 }
 
-fn analyze_file(path: &PathBuf, log_stats: &mut LogStats, formatter: &mut Logs, pattern: &str) {
+async fn analyze_file(
+    path: &PathBuf,
+    log_stats: &mut LogStats,
+    formatter: &mut Logs,
+    pattern: &str,
+) {
     if let Ok(file) = File::open(path) {
         let reader = BufReader::new(file);
 
         for line in reader.lines() {
             if let Ok(line) = line {
                 if pattern.is_empty() || line.contains(pattern) {
-                    log_stats.analyze_log_line(&line);
-                    formatter.analyze_log_line(&line);
+                    formatter.analyze_log_line(&line, path.clone()).await;
+                    log_stats.analyze_log_line(&line).await;
                 }
             }
         }
@@ -70,7 +76,7 @@ fn analyze_file(path: &PathBuf, log_stats: &mut LogStats, formatter: &mut Logs, 
     }
 }
 
-fn analyze_directory(
+async fn analyze_directory(
     path: &PathBuf,
     log_stats: &mut LogStats,
     formatter: &mut Logs,
@@ -80,7 +86,7 @@ fn analyze_directory(
         let entry = entry.expect("Failed to read entry");
         let path = entry.path();
         if path.is_file() {
-            analyze_file(&path, log_stats, formatter, pattern);
+            analyze_file(&path, log_stats, formatter, pattern).await;
         }
     }
 }
