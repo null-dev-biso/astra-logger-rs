@@ -14,9 +14,7 @@ struct Args {
     /// Регулярное выражение для фильтрации строк логов
     #[arg(short = 'l', long, default_value = "")]
     pattern: String,
-    /// Вывод базовой информации о системе
-    #[arg(short = 's', long)]
-    system_info: bool,
+
     /// Сохранение файла для удобного формата логов в json
     #[arg(short = 'j', long)]
     output_json: Option<String>,
