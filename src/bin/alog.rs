@@ -1,5 +1,6 @@
 use astra_logger_rs::formatter::Logs;
 use astra_logger_rs::scanner::LogStats;
+use astra_logger_rs::vizualizer::run_app;
 use clap::Parser;
 use std::fs::File;
 use std::io::{BufRead, BufReader};
@@ -18,9 +19,13 @@ struct Args {
     /// Сохранение файла для удобного формата логов в json
     #[arg(short = 'j', long)]
     output_json: Option<String>,
+    /// Запуск TUI
+    #[arg(short = 't', long)]
+    tui: bool,
 }
 
 #[tokio::main]
+
 async fn main() {
     let args = Args::parse();
 
@@ -43,13 +48,19 @@ async fn main() {
         }
     }
 
-    log_stats.print_stats();
+    if args.tui {
+        if let Err(err) = run_app(formatter, log_stats) {
+            eprintln!("Error running TUI: {}", err);
+        }
+    } else {
+        log_stats.print_stats();
 
-    if let Some(output_path) = args.output_json {
-        if let Err(err) = formatter.format_to_json(&output_path).await {
-            eprintln!("Error formatting log stats to JSON: {}", err);
-        } else {
-            println!("Log stats formatted to JSON and saved to {}", output_path);
+        if let Some(output_path) = args.output_json {
+            if let Err(err) = formatter.format_to_json(&output_path).await {
+                eprintln!("Error formatting log stats to JSON: {}", err);
+            } else {
+                println!("Log stats formatted to JSON and saved to {}", output_path);
+            }
         }
     }
 }
