@@ -1,5 +1,3 @@
-#### Установка раста -> https://www.rust-lang.org/learn/get-started
-
 #### cargo build - установка зависимостей
 
 ```sh
