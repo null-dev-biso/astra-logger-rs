@@ -1,5 +1,3 @@
-// log for tui.rs -> in graph trade function
-
 use crate::formatter::{LogFormatter, Logs};
 use crate::scanner::LogStats;
 use crossterm::{
@@ -11,10 +9,10 @@ use std::fmt;
 use std::{error::Error, io};
 use tui::{
     backend::CrosstermBackend,
-    layout::{Constraint, Corner, Direction, Layout},
+    layout::{Constraint, Direction, Layout},
     style::{Color, Modifier, Style},
-    text::{Span, Spans},
-    widgets::{Block, Borders, List, ListItem},
+    text::{Span, Spans, Text},
+    widgets::{Block, Borders, List, ListItem, Paragraph, Wrap},
     Terminal,
 };
 
@@ -32,21 +30,42 @@ impl fmt::Display for LogFormatter {
 pub struct App {
     logs: Logs,
     stats: LogStats,
+    filter: Option<LogFormatter>,
 }
 
 impl App {
-    pub fn new(logs: Logs, stats: LogStats) -> Self {
-        App { logs, stats }
+    pub fn new(logs: Logs, stats: LogStats, filter: Option<LogFormatter>) -> Self {
+        App {
+            logs,
+            stats,
+            filter,
+        }
     }
 
     pub fn render(
         &mut self,
         terminal: &mut Terminal<CrosstermBackend<io::Stdout>>,
     ) -> Result<(), Box<dyn Error>> {
+        let size = terminal.size()?;
         let chunks = Layout::default()
+            .direction(Direction::Vertical)
+            .constraints([Constraint::Min(80), Constraint::Length(10)].as_ref())
+            .split(size);
+
+        let log_chunks = Layout::default()
             .direction(Direction::Horizontal)
-            .constraints([Constraint::Percentage(50), Constraint::Percentage(50)].as_ref())
-            .split(terminal.size()?);
+            .constraints(if self.filter.is_some() {
+                [Constraint::Percentage(100)].as_ref()
+            } else {
+                [
+                    Constraint::Percentage(25),
+                    Constraint::Percentage(25),
+                    Constraint::Percentage(25),
+                    Constraint::Percentage(25),
+                ]
+                .as_ref()
+            })
+            .split(chunks[0]);
 
         let mut info_items: Vec<ListItem> = Vec::new();
         let mut warning_items: Vec<ListItem> = Vec::new();
@@ -81,84 +100,58 @@ impl App {
             }
         }
 
-        let info_list = List::new(info_items)
-            .block(Block::default().borders(Borders::ALL).title("Info Logs"))
-            .start_corner(Corner::TopLeft);
+        let info_list =
+            List::new(info_items).block(Block::default().borders(Borders::ALL).title("Info Logs"));
 
         let warning_list = List::new(warning_items)
-            .block(Block::default().borders(Borders::ALL).title("Warning Logs"))
-            .start_corner(Corner::TopRight);
+            .block(Block::default().borders(Borders::ALL).title("Warning Logs"));
 
         let error_list = List::new(error_items)
-            .block(Block::default().borders(Borders::ALL).title("Error Logs"))
-            .start_corner(Corner::BottomLeft);
+            .block(Block::default().borders(Borders::ALL).title("Error Logs"));
 
         let trace_list = List::new(trace_items)
-            .block(Block::default().borders(Borders::ALL).title("Trace Logs"))
-            .start_corner(Corner::BottomRight);
+            .block(Block::default().borders(Borders::ALL).title("Trace Logs"));
 
-        let stats_list = List::new(vec![
-            ListItem::new(vec![Spans::from(format!(
-                "Total messages: {}",
-                self.stats.total_messages
-            ))]),
-            ListItem::new(vec![Spans::from(format!(
-                "Info messages: {}",
-                self.stats.info_messages
-            ))]),
-            ListItem::new(vec![Spans::from(format!(
-                "Warning messages: {}",
-                self.stats.warning_messages
-            ))]),
-            ListItem::new(vec![Spans::from(format!(
-                "Error messages: {}",
-                self.stats.error_messages
-            ))]),
-            ListItem::new(vec![Spans::from(format!(
-                "Trace messages: {}",
-                self.stats.trace_messages
-            ))]),
-        ])
-        .block(Block::default().borders(Borders::ALL).title("Stats"));
+        let stats_list = Paragraph::new(Text::from(vec![
+            Spans::from(format!("Total messages: {}", self.stats.total_messages)),
+            Spans::from(format!("Info messages: {}", self.stats.info_messages)),
+            Spans::from(format!("Warning messages: {}", self.stats.warning_messages)),
+            Spans::from(format!("Error messages: {}", self.stats.error_messages)),
+            Spans::from(format!("Trace messages: {}", self.stats.trace_messages)),
+        ]))
+        .block(Block::default().borders(Borders::ALL).title("Stats"))
+        .wrap(Wrap { trim: true });
 
         terminal.draw(|f| {
-            let rects = Layout::default()
-                .direction(Direction::Horizontal)
-                .constraints(
-                    [
-                        Constraint::Percentage(25),
-                        Constraint::Percentage(25),
-                        Constraint::Percentage(25),
-                        Constraint::Percentage(25),
-                    ]
-                    .as_ref(),
-                )
-                .split(f.size());
-
-            let stats_rect = Layout::default()
-                .direction(Direction::Vertical)
-                .constraints([Constraint::Percentage(80), Constraint::Percentage(20)].as_ref())
-                .split(rects[0])[1];
-
-            f.render_widget(info_list, rects[0]);
-            f.render_widget(warning_list, rects[1]);
-            f.render_widget(error_list, rects[2]);
-            f.render_widget(trace_list, rects[3]);
-            f.render_widget(stats_list, stats_rect);
+            if let Some(filter) = &self.filter {
+                let filtered_list = match filter {
+                    LogFormatter::Info => info_list,
+                    LogFormatter::Warning => warning_list,
+                    LogFormatter::Error => error_list,
+                    LogFormatter::Trace => trace_list,
+                };
+                f.render_widget(filtered_list, log_chunks[0]);
+            } else {
+                f.render_widget(info_list, log_chunks[0]);
+                f.render_widget(warning_list, log_chunks[1]);
+                f.render_widget(error_list, log_chunks[2]);
+                f.render_widget(trace_list, log_chunks[3]);
+            }
+            f.render_widget(stats_list, chunks[1]);
         })?;
 
         Ok(())
     }
 }
 
-pub fn run_app(logs: Logs, stats: LogStats) -> eyre::Result<()> {
+pub fn run_app(logs: Logs, stats: LogStats, filter: Option<LogFormatter>) -> eyre::Result<()> {
     enable_raw_mode()?;
     let mut stdout = io::stdout();
     execute!(stdout, EnterAlternateScreen, EnableMouseCapture)?;
     let backend = CrosstermBackend::new(stdout);
     let mut terminal = Terminal::new(backend)?;
 
-    let mut app = App::new(logs, stats);
+    let mut app = App::new(logs, stats, filter);
 
     loop {
         let _ = app.render(&mut terminal);
