@@ -1,5 +1,6 @@
 use regex::Regex;
 
+#[derive(Clone)]
 pub struct LogStats {
     pub total_messages: usize,
     pub info_messages: usize,

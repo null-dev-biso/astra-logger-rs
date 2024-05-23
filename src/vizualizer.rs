@@ -5,16 +5,44 @@ use crossterm::{
     execute,
     terminal::{disable_raw_mode, enable_raw_mode, EnterAlternateScreen, LeaveAlternateScreen},
 };
-use std::fmt;
-use std::{error::Error, io};
+use std::{error::Error, fmt, io};
 use tui::{
     backend::CrosstermBackend,
     layout::{Constraint, Direction, Layout},
     style::{Color, Modifier, Style},
     text::{Span, Spans, Text},
-    widgets::{Block, Borders, List, ListItem, Paragraph, Wrap},
+    widgets::{Block, Borders, List, ListItem, Paragraph, Tabs, Wrap},
     Terminal,
 };
+
+// Структура для представления эллиптической кривой
+struct EllipticCurve {
+    a: f64,
+    b: f64,
+}
+
+impl EllipticCurve {
+    fn new(a: f64, b: f64) -> Self {
+        EllipticCurve { a, b }
+    }
+
+    fn calculate_points(&self, x_min: f64, x_max: f64, step: f64) -> Vec<(f64, f64)> {
+        let mut points = Vec::new();
+        let mut x = x_min;
+
+        while x <= x_max {
+            let y2 = x * x * x + self.a * x + self.b;
+            if y2 >= 0.0 {
+                let y = y2.sqrt();
+                points.push((x, y));
+                points.push((x, -y));
+            }
+            x += step;
+        }
+
+        points
+    }
+}
 
 impl fmt::Display for LogFormatter {
     fn fmt(&self, f: &mut fmt::Formatter) -> fmt::Result {
@@ -31,14 +59,23 @@ pub struct App {
     logs: Logs,
     stats: LogStats,
     filter: Option<LogFormatter>,
+    tab: usize,
+    points: Vec<(f64, f64)>,
 }
 
 impl App {
     pub fn new(logs: Logs, stats: LogStats, filter: Option<LogFormatter>) -> Self {
+        // Используем значения из stats для a и b
+        let a = stats.error_messages as f64 / stats.total_messages as f64;
+        let b = stats.warning_messages as f64 / stats.total_messages as f64;
+        let curve = EllipticCurve::new(a, b);
+        let points = curve.calculate_points(-5.0, 5.0, 0.1);
         App {
             logs,
             stats,
             filter,
+            tab: 0,
+            points,
         }
     }
 
@@ -49,9 +86,42 @@ impl App {
         let size = terminal.size()?;
         let chunks = Layout::default()
             .direction(Direction::Vertical)
-            .constraints([Constraint::Min(80), Constraint::Length(10)].as_ref())
+            .constraints([Constraint::Length(3), Constraint::Min(80)].as_ref())
             .split(size);
 
+        let titles = ["Logs", "Elliptic Curve"]
+            .iter()
+            .cloned()
+            .map(Spans::from)
+            .collect();
+
+        let tabs = Tabs::new(titles)
+            .block(Block::default().borders(Borders::ALL).title("Menu"))
+            .select(self.tab)
+            .style(Style::default().fg(Color::White))
+            .highlight_style(
+                Style::default()
+                    .fg(Color::Yellow)
+                    .add_modifier(Modifier::BOLD),
+            );
+
+        terminal.draw(|f| {
+            f.render_widget(tabs, chunks[0]);
+            match self.tab {
+                0 => self.render_logs(f, chunks[1]),
+                1 => self.render_curve(f, chunks[1]),
+                _ => {}
+            }
+        })?;
+
+        Ok(())
+    }
+
+    fn render_logs<B: tui::backend::Backend>(
+        &self,
+        f: &mut tui::Frame<B>,
+        area: tui::layout::Rect,
+    ) {
         let log_chunks = Layout::default()
             .direction(Direction::Horizontal)
             .constraints(if self.filter.is_some() {
@@ -65,7 +135,7 @@ impl App {
                 ]
                 .as_ref()
             })
-            .split(chunks[0]);
+            .split(area);
 
         let mut info_items: Vec<ListItem> = Vec::new();
         let mut warning_items: Vec<ListItem> = Vec::new();
@@ -122,25 +192,64 @@ impl App {
         .block(Block::default().borders(Borders::ALL).title("Stats"))
         .wrap(Wrap { trim: true });
 
-        terminal.draw(|f| {
-            if let Some(filter) = &self.filter {
-                let filtered_list = match filter {
-                    LogFormatter::Info => info_list,
-                    LogFormatter::Warning => warning_list,
-                    LogFormatter::Error => error_list,
-                    LogFormatter::Trace => trace_list,
-                };
-                f.render_widget(filtered_list, log_chunks[0]);
-            } else {
-                f.render_widget(info_list, log_chunks[0]);
-                f.render_widget(warning_list, log_chunks[1]);
-                f.render_widget(error_list, log_chunks[2]);
-                f.render_widget(trace_list, log_chunks[3]);
-            }
-            f.render_widget(stats_list, chunks[1]);
-        })?;
+        if let Some(filter) = &self.filter {
+            let filtered_list = match filter {
+                LogFormatter::Info => info_list,
+                LogFormatter::Warning => warning_list,
+                LogFormatter::Error => error_list,
+                LogFormatter::Trace => trace_list,
+            };
+            f.render_widget(filtered_list, log_chunks[0]);
+        } else {
+            f.render_widget(info_list, log_chunks[0]);
+            f.render_widget(warning_list, log_chunks[1]);
+            f.render_widget(error_list, log_chunks[2]);
+            f.render_widget(trace_list, log_chunks[3]);
+        }
+        f.render_widget(stats_list, area);
+    }
 
-        Ok(())
+    fn render_curve<B: tui::backend::Backend>(
+        &self,
+        f: &mut tui::Frame<B>,
+        area: tui::layout::Rect,
+    ) {
+        let datasets = vec![tui::widgets::Dataset::default()
+            .name("Elliptic Curve")
+            .marker(tui::symbols::Marker::Dot)
+            .style(Style::default().fg(Color::Cyan))
+            .data(&self.points)];
+
+        let chart = tui::widgets::Chart::new(datasets)
+            .block(
+                Block::default()
+                    .borders(Borders::ALL)
+                    .title("Elliptic Curve"),
+            )
+            .x_axis(
+                tui::widgets::Axis::default()
+                    .title("X Axis")
+                    .style(Style::default().fg(Color::Gray))
+                    .bounds([-5.0, 5.0])
+                    .labels(vec![
+                        Span::styled("-5", Style::default().add_modifier(Modifier::BOLD)),
+                        Span::raw("0"),
+                        Span::styled("5", Style::default().add_modifier(Modifier::BOLD)),
+                    ]),
+            )
+            .y_axis(
+                tui::widgets::Axis::default()
+                    .title("Y Axis")
+                    .style(Style::default().fg(Color::Gray))
+                    .bounds([-10.0, 10.0])
+                    .labels(vec![
+                        Span::styled("-10", Style::default().add_modifier(Modifier::BOLD)),
+                        Span::raw("0"),
+                        Span::styled("10", Style::default().add_modifier(Modifier::BOLD)),
+                    ]),
+            );
+
+        f.render_widget(chart, area);
     }
 }
 
@@ -159,6 +268,7 @@ pub fn run_app(logs: Logs, stats: LogStats, filter: Option<LogFormatter>) -> eyr
         if let Event::Key(key) = event::read()? {
             match key.code {
                 KeyCode::Char('q') => break,
+                KeyCode::Char('t') => app.tab = (app.tab + 1) % 2,
                 _ => {}
             }
         }

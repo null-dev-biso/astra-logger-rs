@@ -5,7 +5,7 @@ use std::fs::File;
 use std::io::Write;
 use std::path::PathBuf;
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub enum LogFormatter {
     Info,
     Warning,
@@ -13,7 +13,7 @@ pub enum LogFormatter {
     Trace,
 }
 
-#[derive(Serialize, Deserialize, Debug)]
+#[derive(Serialize, Deserialize, Debug, Clone)]
 pub struct LogEntry {
     pub level: LogFormatter,
     pub message: String,
@@ -36,7 +36,7 @@ impl LogEntry {
         }
     }
 }
-
+#[derive(Clone)]
 pub struct Logs {
     pub total_messages: usize,
     pub entries: Vec<LogEntry>,

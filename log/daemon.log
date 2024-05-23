@@ -21,6 +21,8 @@ Mar 22 11:53:15 astra systemd-sysusers[285]: Creating group systemd-coredump wit
 Mar 22 11:53:15 astra systemd-sysusers[285]: Creating user systemd-coredump (systemd Core Dumper) with uid 999 and gid 999.
 Mar 22 11:53:15 astra systemd-udevd[288]: Network interface NamePolicy= disabled on kernel command line, ignoring.
 Mar 22 11:53:15 astra systemd[1]: Starting Flush Journal to Persistent Storage...
+Mar 22 11:53:15 astra systemd-udevd[288]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 11:53:15 astra systemd[1]: Starting Flush Journal to Persistent Storage...
 Mar 22 11:53:15 astra systemd[1]: Started udev Coldplug all Devices.
 Mar 22 11:53:15 astra systemd-journald[271]: Runtime journal (/run/log/journal/08d89582f4de48ad844cd451eafb5725) is 2.4M, max 19.7M, 17.3M free.
 Mar 22 11:53:15 astra systemd[1]: Starting Helper to synchronize boot up for ifupdown...
@@ -111,6 +113,10 @@ Mar 22 11:53:18 astra systemd[1]: Starting Lock removable media mounts...
 Mar 22 11:53:18 astra avahi-daemon[439]: Successfully dropped root privileges.
 Mar 22 11:53:18 astra avahi-daemon[439]: avahi-daemon 0.7 starting up.
 Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+
 Mar 22 11:53:18 astra systemd[1]: Started Regular background program processing daemon.
 Mar 22 11:53:18 astra systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
 Mar 22 11:53:18 astra systemd[1]: Starting Initialize Parsec Subsystem...
@@ -360,6 +366,11 @@ Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
 Mar 22 12:04:39 astra umount[18811]: umount: /media/cdrom0: target is busy.
 Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
 Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+warning
 Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
 Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
 Mar 22 12:04:39 astra umount[18812]: umount: /media/cdrom0: target is busy.
@@ -547,6 +558,13 @@ Mar 22 12:06:49 astra systemd[1]: Starting Initialize Parsec Subsystem...
 Mar 22 12:06:49 astra systemd[1]: Started Run anacron jobs.
 Mar 22 12:06:49 astra systemd[1]: Started Swap Wiper.
 Mar 22 12:06:50 astra systemd[1]: Started D-Bus System Message Bus.
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
 Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
 Mar 22 12:06:50 astra dbus-daemon[447]: dbus[447]: Unknown username "geoclue" in message bus configuration file
 Mar 22 12:06:50 astra systemd[1]: Starting Network Manager...
@@ -2768,3 +2786,12 @@ May 14 20:18:48 astra systemd[1003]: Failed to stat() device node file /dev/sda1
 May 14 20:18:48 astra systemd[1003]: run-user-1000-fly\x2dfm\x2dvfs-archives-be1fc12a43b438f7ca69ad18631635c4.mount: Succeeded.
 May 14 20:32:45 astra systemd[1]: Started Run anacron jobs.
 May 14 20:32:45 astra systemd[1]: anacron.service: Succeeded.
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
