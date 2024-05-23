@@ -16,17 +16,17 @@ use tui::{
 };
 
 // Структура для представления эллиптической кривой
-struct EllipticCurve {
+pub struct EllipticCurve {
     a: f64,
     b: f64,
 }
 
 impl EllipticCurve {
-    fn new(a: f64, b: f64) -> Self {
+    pub fn new(a: f64, b: f64) -> Self {
         EllipticCurve { a, b }
     }
 
-    fn calculate_points(&self, x_min: f64, x_max: f64, step: f64) -> Vec<(f64, f64)> {
+    pub fn calculate_points(&self, x_min: f64, x_max: f64, step: f64) -> Vec<(f64, f64)> {
         let mut points = Vec::new();
         let mut x = x_min;
 
