@@ -21,7 +21,3 @@ Options:
 ПРИМЕР
 ./alog.sh -p ./log/daemon.log -l " " -j ./log/daemon.json
 ```
-
-1. Async logging + recursive algorythm ✔
-2. Format on json with path and date ✔
-3. Beatiful math graph after system details
