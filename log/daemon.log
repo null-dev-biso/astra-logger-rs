@@ -2795,3 +2795,803 @@ Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detect
 Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
 
 Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Mar 22 11:53:15 astra systemd: Inserted module 'autofs4'
+Mar 22 11:53:15 astra systemd: systemd 241 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+Mar 22 11:53:15 astra systemd: Detected virtualization oracle.
+Mar 22 11:53:15 astra systemd: Detected architecture x86-64.
+Mar 22 11:53:15 astra systemd: Set hostname to <astra>.
+Mar 22 11:53:15 astra systemd: Listening on Journal Socket.
+Mar 22 11:53:15 astra systemd: Created slice User and Session Slice.
+Mar 22 11:53:15 astra systemd: Starting Uncomplicated firewall...
+Mar 22 11:53:15 astra systemd: Listening on initctl Compatibility Named Pipe.
+Mar 22 11:53:15 astra systemd: Starting Set the console keyboard layout...
+Mar 22 11:53:15 astra systemd: Mounting Huge Pages File System...
+Mar 22 11:53:15 astra systemd-journald[271]: Journal started
+Mar 22 11:53:15 astra systemd-journald[271]: Runtime journal (/run/log/journal/08d89582f4de48ad844cd451eafb5725) is 2.4M, max 19.7M, 17.3M free.
+Mar 22 11:53:15 astra systemd-modules-load[262]: Inserted module 'lp'
+Mar 22 11:53:15 astra systemd-modules-load[262]: Inserted module 'ppdev'
+Mar 22 11:53:15 astra systemd-modules-load[262]: Inserted module 'parport_pc'
+Mar 22 11:53:15 astra systemd-modules-load[262]: Inserted module 'usbip_core'
+Mar 22 11:53:15 astra systemd-modules-load[262]: Inserted module 'usbip_host'
+Mar 22 11:53:15 astra systemd-modules-load[262]: Inserted module 'vhci_hcd'
+Mar 22 11:53:15 astra systemd-sysusers[285]: Creating group systemd-coredump with gid 999.
+Mar 22 11:53:15 astra systemd-sysusers[285]: Creating user systemd-coredump (systemd Core Dumper) with uid 999 and gid 999.
+Mar 22 11:53:15 astra systemd-udevd[288]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 11:53:15 astra systemd[1]: Starting Flush Journal to Persistent Storage...
+Mar 22 11:53:15 astra systemd-udevd[288]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 11:53:15 astra systemd[1]: Starting Flush Journal to Persistent Storage...
+Mar 22 11:53:15 astra systemd[1]: Started udev Coldplug all Devices.
+Mar 22 11:53:15 astra systemd-journald[271]: Runtime journal (/run/log/journal/08d89582f4de48ad844cd451eafb5725) is 2.4M, max 19.7M, 17.3M free.
+Mar 22 11:53:15 astra systemd[1]: Starting Helper to synchronize boot up for ifupdown...
+Mar 22 11:53:15 astra systemd[1]: Started Flush Journal to Persistent Storage.
+Mar 22 11:53:15 astra systemd[1]: Started Set the console keyboard layout.
+Mar 22 11:53:15 astra systemd[1]: Reached target Local File Systems (Pre).
+Mar 22 11:53:15 astra systemd[1]: Reached target Local File Systems.
+Mar 22 11:53:15 astra systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Mar 22 11:53:15 astra systemd[1]: Starting Set console font and keymap...
+Mar 22 11:53:15 astra systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Mar 22 11:53:15 astra systemd[1]: Starting Create Volatile Files and Directories...
+Mar 22 11:53:15 astra systemd[1]: Started Helper to synchronize boot up for ifupdown.
+Mar 22 11:53:15 astra systemd[1]: Started udev Kernel Device Manager.
+Mar 22 11:53:15 astra systemd[1]: plymouth-read-write.service: Succeeded.
+Mar 22 11:53:15 astra systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+Mar 22 11:53:15 astra systemd[1]: Received SIGRTMIN+20 from PID 187 (plymouthd).
+Mar 22 11:53:15 astra systemd[1]: Starting Show Plymouth Boot Screen...
+Mar 22 11:53:15 astra systemd[1]: Starting Raise network interfaces...
+Mar 22 11:53:15 astra systemd[1]: plymouth-start.service: Succeeded.
+Mar 22 11:53:15 astra systemd[1]: Started Show Plymouth Boot Screen.
+Mar 22 11:53:15 astra systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+Mar 22 11:53:15 astra systemd[1]: Condition check resulted in Dispatch Password Requests to Console Directory Watch being skipped.
+Mar 22 11:53:15 astra systemd[1]: Reached target Local Encrypted Volumes.
+Mar 22 11:53:15 astra systemd[1]: Started Create Volatile Files and Directories.
+Mar 22 11:53:15 astra systemd[1]: Starting Security Auditing Service...
+Mar 22 11:53:15 astra auditd[324]: Started dispatcher: /sbin/audispd pid: 326
+Mar 22 11:53:15 astra auditd[324]: Init complete, auditd 2.8.5 listening for events (startup state enable)
+Mar 22 11:53:16 astra augenrules[328]: No rules
+Mar 22 11:53:16 astra augenrules[328]: enabled 1
+Mar 22 11:53:16 astra augenrules[328]: failure 1
+Mar 22 11:53:16 astra augenrules[328]: pid 324
+Mar 22 11:53:16 astra augenrules[328]: rate_limit 0
+Mar 22 11:53:16 astra augenrules[328]: backlog_limit 8192
+Mar 22 11:53:16 astra augenrules[328]: lost 0
+Mar 22 11:53:16 astra augenrules[328]: backlog 4
+Mar 22 11:53:16 astra augenrules[328]: backlog_wait_time 15000
+Mar 22 11:53:16 astra augenrules[328]: enabled 1
+Mar 22 11:53:16 astra augenrules[328]: failure 1
+Mar 22 11:53:16 astra augenrules[328]: pid 324
+Mar 22 11:53:16 astra augenrules[328]: rate_limit 0
+Mar 22 11:53:16 astra augenrules[328]: backlog_limit 8192
+Mar 22 11:53:16 astra augenrules[328]: lost 0
+Mar 22 11:53:16 astra augenrules[328]: backlog 4
+Mar 22 11:53:16 astra augenrules[328]: backlog_wait_time 15000
+Mar 22 11:53:16 astra augenrules[328]: enabled 1
+Mar 22 11:53:16 astra augenrules[328]: failure 1
+Mar 22 11:53:16 astra augenrules[328]: pid 324
+Mar 22 11:53:16 astra augenrules[328]: rate_limit 0
+Mar 22 11:53:16 astra augenrules[328]: backlog_limit 8192
+Mar 22 11:53:16 astra augenrules[328]: lost 0
+Mar 22 11:53:16 astra augenrules[328]: backlog 68
+Mar 22 11:53:16 astra augenrules[328]: backlog_wait_time 0
+Mar 22 11:53:16 astra systemd[1]: Started Security Auditing Service.
+Mar 22 11:53:16 astra systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Mar 22 11:53:16 astra systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Mar 22 11:53:16 astra systemd[1]: Started Raise network interfaces.
+Mar 22 11:53:16 astra systemd-udevd[307]: Using default interface naming scheme 'v240'.
+Mar 22 11:53:17 astra systemd-udevd[307]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Mar 22 11:53:18 astra systemd[1]: Found device VBOX_HARDDISK 5.
+Mar 22 11:53:18 astra systemd-udevd[296]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Mar 22 11:53:18 astra systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Mar 22 11:53:18 astra systemd[1]: Activating swap /dev/disk/by-uuid/c0a54cb9-5376-4d45-b442-d745469b5fc6...
+Mar 22 11:53:18 astra systemd[1]: Activated swap /dev/disk/by-uuid/c0a54cb9-5376-4d45-b442-d745469b5fc6.
+Mar 22 11:53:18 astra systemd[1]: Reached target Swap.
+Mar 22 11:53:18 astra systemd[1]: Reached target System Initialization.
+Mar 22 11:53:18 astra systemd[1]: Started Daily rotation of log files.
+Mar 22 11:53:18 astra systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+Mar 22 11:53:18 astra systemd[1]: Started CUPS Scheduler.
+Mar 22 11:53:18 astra systemd[1]: Reached target Paths.
+Mar 22 11:53:18 astra systemd[1]: Listening on CUPS Scheduler.
+Mar 22 11:53:18 astra systemd[1]: Started Daily man-db regeneration.
+Mar 22 11:53:18 astra systemd[1]: Started Daily apt download activities.
+Mar 22 11:53:18 astra systemd[1]: Started Daily apt upgrade and clean activities.
+Mar 22 11:53:18 astra systemd[1]: Started Trigger anacron every hour.
+Mar 22 11:53:18 astra systemd[1]: Started Daily Cleanup of Temporary Directories.
+Mar 22 11:53:18 astra systemd[1]: Reached target Timers.
+Mar 22 11:53:18 astra systemd[1]: Listening on D-Bus System Message Bus Socket.
+Mar 22 11:53:18 astra systemd[1]: Reached target Sockets.
+Mar 22 11:53:18 astra systemd[1]: Reached target Basic System.
+Mar 22 11:53:18 astra systemd[1]: Starting System Logger Daemon...
+Mar 22 11:53:18 astra systemd[1]: Started Run anacron jobs.
+Mar 22 11:53:18 astra systemd[1]: Started Swap Wiper.
+Mar 22 11:53:18 astra systemd[1]: Starting Lock/Unlock ptrace for user...
+Mar 22 11:53:18 astra systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+Mar 22 11:53:18 astra systemd[1]: Starting Disk Manager...
+Mar 22 11:53:18 astra avahi-daemon[439]: Found user 'avahi' (UID 113) and group 'avahi' (GID 126).
+Mar 22 11:53:18 astra systemd[1]: Starting Lock removable media mounts...
+Mar 22 11:53:18 astra avahi-daemon[439]: Successfully dropped root privileges.
+Mar 22 11:53:18 astra avahi-daemon[439]: avahi-daemon 0.7 starting up.
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Mar 22 11:53:18 astra avahi-daemon[439]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+
+Mar 22 11:53:18 astra systemd[1]: Started Regular background program processing daemon.
+Mar 22 11:53:18 astra systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+Mar 22 11:53:18 astra systemd[1]: Starting Initialize Parsec Subsystem...
+Mar 22 11:53:18 astra systemd[1]: Starting Login Service...
+Mar 22 11:53:18 astra systemd[1]: Started D-Bus System Message Bus.
+Mar 22 11:53:19 astra systemd[1]: Starting WPA supplicant...
+Mar 22 11:53:19 astra dbus-daemon[453]: dbus[453]: Unknown username "geoclue" in message bus configuration file
+Mar 22 11:53:19 astra systemd[1]: Starting Network Manager...
+Mar 22 11:53:19 astra avahi-daemon[439]: Successfully called chroot().
+Mar 22 11:53:19 astra avahi-daemon[439]: Successfully dropped remaining capabilities.
+Mar 22 11:53:19 astra avahi-daemon[443]: chroot.c: open() failed: No such file or directory
+Mar 22 11:53:19 astra avahi-daemon[439]: Failed to open /etc/resolv.conf: Invalid argument
+Mar 22 11:53:19 astra avahi-daemon[439]: No service file found in /etc/avahi/services.
+Mar 22 11:53:19 astra avahi-daemon[439]: Network interface enumeration completed.
+Mar 22 11:53:19 astra avahi-daemon[439]: Server startup complete. Host name is astra.local. Local service cookie is 3501493256.
+Mar 22 11:53:19 astra wpa_supplicant[464]: Successfully initialized wpa_supplicant
+Mar 22 11:53:19 astra dbus-daemon[453]: [system] Activating systemd to hand-off: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.1' (uid=0 pid=441 comm="/usr/lib/udisks2/udisksd ")
+Mar 22 11:53:19 astra dbus-daemon[453]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Mar 22 11:53:19 astra dbus-daemon[453]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.5' (uid=0 pid=465 comm="/usr/sbin/NetworkManager --no-daemon ")
+Mar 22 11:53:19 astra systemd[1]: astra-ptrace-lock.service: Succeeded.
+Mar 22 11:53:19 astra systemd[1]: Started Lock/Unlock ptrace for user.
+Mar 22 11:53:20 astra systemd[1]: Started Login Service.
+Mar 22 11:53:20 astra systemd[1]: Started Network Manager.
+Mar 22 11:53:20 astra systemd-udevd[376]: Process '/usr/sbin/alsactl -E HOME=/run/alsa restore 0' failed with exit code 99.
+Mar 22 11:53:20 astra systemd[1]: Starting Hostname Service...
+Mar 22 11:53:20 astra systemd[1]: Starting Authorization Manager...
+Mar 22 11:53:20 astra alsactl[618]: alsactl 1.1.8 daemon started
+Mar 22 11:53:20 astra systemd[1]: Started Manage Sound Card State (restore and store).
+Mar 22 11:53:20 astra alsactl[618]: /usr/sbin/alsactl: load_state:1683Cannot open /var/lib/alsa/asound.state for reading: No such file or directory
+Mar 22 11:53:20 astra alsactl[618]: Found hardware: "ICH" "Analog Devices AD1980" "AC97a:41445370" "0x1028" "0x0177"
+Mar 22 11:53:20 astra alsactl[618]: Hardware is initialized using a generic method
+Mar 22 11:53:20 astra systemd[1]: Starting Save/Restore Sound Card State...
+Mar 22 11:53:20 astra polkitd[609]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Mar 22 11:53:20 astra alsactl[631]: /usr/sbin/alsactl: load_state:1683: Cannot open /var/lib/alsa/asound.state for reading: No such file or directory
+Mar 22 11:53:20 astra alsactl[631]: Found hardware: "ICH" "Analog Devices AD1980" "AC97a:41445370" "0x1028" "0x0177"
+Mar 22 11:53:20 astra alsactl[631]: Hardware is initialized using a generic method
+Mar 22 11:53:20 astra systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+Mar 22 11:53:20 astra dbus-daemon[453]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Mar 22 11:53:20 astra systemd[1]: Started WPA supplicant.
+Mar 22 11:53:20 astra systemd[1]: Reached target Network.
+Mar 22 11:53:20 astra systemd[1]: Started Save/Restore Sound Card State.
+Mar 22 11:53:20 astra systemd[1]: Reached target Sound Card.
+Mar 22 11:53:20 astra systemd[1]: Started Authorization Manager.
+Mar 22 11:53:20 astra systemd[1]: astra-mount-lock.service: Succeeded.
+Mar 22 11:53:20 astra systemd[1]: Started Lock removable media mounts.
+Mar 22 11:53:20 astra systemd[1]: Reached target astra-safepolicy.target.
+Mar 22 11:53:20 astra systemd[1]: Starting Permit User Sessions...
+Mar 22 11:53:20 astra systemd[1]: Started Permit User Sessions.
+Mar 22 11:53:20 astra systemd[1]: Started The FLY get exec service.
+Mar 22 11:53:20 astra fly-getexe[686]: flygetexe helper: parsec enabled = true
+Mar 22 11:53:20 astra systemd[1]: Starting Hold until boot process finishes up...
+Mar 22 11:53:20 astra systemd[1]: Starting Terminate Plymouth Boot Screen...
+Mar 22 11:53:20 astra systemd[1]: Starting The FLY login manager...
+Mar 22 11:53:20 astra systemd[1]: plymouth-quit-wait.service: Succeeded.
+Mar 22 11:53:20 astra systemd[1]: Started Hold until boot process finishes up.
+Mar 22 11:53:21 astra systemd[1]: plymouth-quit.service: Succeeded.
+Mar 22 11:53:21 astra systemd[1]: Started Terminate Plymouth Boot Screen.
+Mar 22 11:53:21 astra systemd[1]: Started The FLY login manager.
+Mar 22 11:53:21 astra systemd[1]: Received SIGRTMIN+21 from PID 187 (n/a).
+Mar 22 11:53:21 astra systemd[1]: Received SIGRTMIN+21 from PID 187 (n/a).
+Mar 22 11:53:21 astra systemd[1]: Starting Screens orientation monitor...
+Mar 22 11:53:21 astra systemd[1]: Started Getty on tty1.
+Mar 22 11:53:21 astra systemd[1]: Reached target Login Prompts.
+Mar 22 11:53:21 astra fly-dm[721]: plymouth is NOT running
+Mar 22 11:53:21 astra fly-dm[749]: register systemd session for Xorg with name=:0 seat=null vt7, user=fly-dm
+Mar 22 11:53:21 astra systemd-udevd[288]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 11:53:21 astra dbus-daemon[453]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Mar 22 11:53:21 astra dbus-daemon[453]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.5' (uid=0 pid=465 comm="/usr/sbin/NetworkManager --no-daemon ")
+Mar 22 11:53:21 astra systemd[1]: Started Hostname Service.
+Mar 22 11:53:21 astra astra-orientation[728]: QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-astra-orientation'
+Mar 22 11:53:21 astra systemd[1]: Started Disk Manager.
+Mar 22 11:53:21 astra systemd[1]: Starting Network Manager Script Dispatcher Service...
+Mar 22 11:53:21 astra systemd[1]: Created slice User Slice of UID 107.
+Mar 22 11:53:21 astra systemd[1]: Starting User Runtime Directory /run/user/107...
+Mar 22 11:53:21 astra dbus-daemon[453]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Mar 22 11:53:21 astra systemd[1]: Started Network Manager Script Dispatcher Service.
+Mar 22 11:53:21 astra nm-dispatcher[781]: req:1 'hostname': new request (2 scripts)
+Mar 22 11:53:21 astra nm-dispatcher[781]: req:1 'hostname': start running ordered scripts...
+Mar 22 11:53:21 astra systemd[1]: Started User Runtime Directory /run/user/107.
+Mar 22 11:53:21 astra systemd[1]: Starting User Manager for UID 107...
+Mar 22 11:53:22 astra nm-dispatcher[781]: req:2 'connectivity-change': new request (2 scripts)
+Mar 22 11:53:22 astra nm-dispatcher[781]: req:2 'connectivity-change': start running ordered scripts...
+Mar 22 11:53:22 astra parsec_systemd_init[447]: Set up PARSEC ENV...done.
+Mar 22 11:53:22 astra parsec_systemd_init[447]: Clear Private Directory...done.
+Mar 22 11:53:22 astra avahi-daemon[439]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::4be:995a:926a:e195.
+Mar 22 11:53:22 astra avahi-daemon[439]: New relevant interface eth0.IPv6 for mDNS.
+Mar 22 11:53:22 astra avahi-daemon[439]: Registering new address record for fe80::4be:995a:926a:e195 on eth0.*.
+Mar 22 11:53:22 astra parsec_systemd_init[447]: Setting default audit...   1 0:0
+Mar 22 11:53:22 astra parsec_systemd_init[447]: done.
+Mar 22 11:53:22 astra parsec_systemd_init[447]: Set NO CHMOD +X flag...done.
+Mar 22 11:53:22 astra systemd[1]: Reloading.
+Mar 22 11:53:22 astra dhclient[848]: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Mar 22 11:53:22 astra dhclient[848]: DHCPOFFER of 10.0.2.15 from 10.0.2.2
+Mar 22 11:53:22 astra dhclient[848]: DHCPREQUEST for 10.0.2.15 on eth0 to 255.255.255.255 port 67
+Mar 22 11:53:22 astra dhclient[848]: DHCPACK of 10.0.2.15 from 10.0.2.2
+Mar 22 11:53:22 astra avahi-daemon[439]: Joining mDNS multicast group on interface eth0.IPv4 with address 10.0.2.15.
+Mar 22 11:53:22 astra avahi-daemon[439]: New relevant interface eth0.IPv4 for mDNS.
+Mar 22 11:53:22 astra avahi-daemon[439]: Registering new address record for 10.0.2.15 on eth0.IPv4.
+Mar 22 11:53:22 astra systemd[810]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 11:53:22 astra systemd[810]: Failed to stat() device node file /dev/sda5: Permission denied
+Mar 22 11:53:22 astra dhclient[848]: bound to 10.0.2.15 -- renewal in 37456 seconds.
+Mar 22 11:53:22 astra nm-dispatcher[781]: req:3 'up' [eth0]: new request (2 scripts)
+Mar 22 11:53:22 astra nm-dispatcher[781]: req:3 'up' [eth0]: start running ordered scripts...
+Mar 22 11:53:22 astra nm-dispatcher[781]: req:4 'connectivity-change': new request (2 scripts)
+Mar 22 11:53:22 astra nm-dispatcher[781]: req:4 'connectivity-change': start running ordered scripts...
+Mar 22 11:53:22 astra systemd[810]: Reached target Paths.
+Mar 22 11:53:22 astra systemd[810]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Mar 22 11:53:22 astra systemd[810]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Mar 22 11:53:22 astra systemd[810]: Listening on GnuPG cryptographic agent and passphrase cache.
+Mar 22 11:53:22 astra systemd[810]: Reached target Timers.
+Mar 22 11:53:22 astra systemd[810]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Mar 22 11:53:22 astra systemd[810]: Listening on GnuPG network certificate management daemon.
+Mar 22 11:53:22 astra systemd[810]: Reached target Sockets.
+Mar 22 11:53:22 astra systemd[810]: Reached target Basic System.
+Mar 22 11:53:22 astra systemd[810]: Reached target Default.
+Mar 22 11:53:22 astra systemd[810]: Startup finished in 856ms.
+Mar 22 11:53:23 astra systemd[1]: getty@tty1.service: Current command vanished from the unit file, execution of the command list won't be resumed.
+Mar 22 11:53:24 astra systemd[1]: Started System Logger Daemon.
+Mar 22 11:53:24 astra systemd[1]: Started User Manager for UID 107.
+Mar 22 11:53:24 astra systemd[1]: Started Set console font and keymap.
+Mar 22 11:53:24 astra systemd[1]: Started Initialize Parsec Subsystem.
+Mar 22 11:53:24 astra systemd[1]: Started Session c1 of user fly-dm.
+Mar 22 11:53:24 astra fly-dm[749]: No session (null) registered for pid=749 err=0! Check if system dbus run
+Mar 22 11:53:25 astra systemd[1]: astra-orientation.service: Main process exited, code=killed, status=10/USR1
+Mar 22 11:53:25 astra systemd[1]: astra-orientation.service: Failed with result 'signal'.
+Mar 22 11:53:25 astra systemd[1]: Failed to start Screens orientation monitor.
+Mar 22 11:53:25 astra systemd[1]: Reached target Multi-User System.
+Mar 22 11:53:25 astra systemd[1]: Reached target Graphical Interface.
+Mar 22 11:53:25 astra systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Mar 22 11:53:25 astra systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+Mar 22 11:53:25 astra systemd[1]: Started Update UTMP about System Runlevel Changes.
+Mar 22 11:53:25 astra systemd[1]: Startup finished in 4.381s (kernel) + 11.187s (userspace) = 15.569s.
+Mar 22 11:53:25 astra systemd[1]: astra-orientation.service: Service RestartSec=100ms expired, scheduling restart.
+Mar 22 11:53:25 astra systemd[1]: astra-orientation.service: Scheduled restart job, restart counter is at 1.
+Mar 22 11:53:25 astra systemd[1]: Stopped Screens orientation monitor.
+Mar 22 11:53:25 astra systemd[1]: Starting Screens orientation monitor...
+Mar 22 11:53:25 astra astra-orientation[978]: QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-astra-orientation'
+Mar 22 11:53:25 astra systemd[1]: Started Screens orientation monitor.
+Mar 22 11:53:26 astra dbus-daemon[453]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.16' (uid=107 pid=977 comm="/usr/bin/kscreend-setup ")
+Mar 22 11:53:26 astra systemd[1]: Starting Daemon for power management...
+Mar 22 11:53:26 astra dbus-daemon[453]: [system] Successfully activated service 'org.freedesktop.UPower'
+Mar 22 11:53:26 astra systemd[1]: Started Daemon for power management.
+Mar 22 11:53:33 astra systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Mar 22 11:53:40 astra systemd[1]: Created slice User Slice of UID 1000.
+Mar 22 11:53:40 astra systemd[1]: Starting User Runtime Directory /run/user/1000...
+Mar 22 11:53:40 astra systemd[810]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 11:53:40 astra systemd[1]: Started User Runtime Directory /run/user/1000.
+Mar 22 11:53:40 astra systemd[1]: Starting User Manager for UID 1000...
+Mar 22 11:53:41 astra systemd[1041]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 11:53:41 astra systemd[1041]: Failed to stat() device node file /dev/sda5: Permission denied
+Mar 22 11:53:41 astra systemd[1041]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Mar 22 11:53:41 astra systemd[1041]: Listening on GnuPG cryptographic agent and passphrase cache.
+Mar 22 11:53:41 astra systemd[1041]: Reached target Timers.
+Mar 22 11:53:41 astra systemd[1041]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Mar 22 11:53:41 astra systemd[1041]: Listening on GnuPG network certificate management daemon.
+Mar 22 11:53:41 astra systemd[1041]: Reached target Paths.
+Mar 22 11:53:41 astra systemd[1041]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Mar 22 11:53:41 astra systemd[1041]: Reached target Sockets.
+Mar 22 11:53:41 astra systemd[1041]: Reached target Basic System.
+Mar 22 11:53:41 astra systemd[1]: Started User Manager for UID 1000.
+Mar 22 11:53:41 astra systemd[1]: Started Session 3 of user sa.
+Mar 22 11:53:41 astra systemd[1041]: Reached target Default.
+Mar 22 11:53:41 astra systemd[1041]: Startup finished in 180ms.
+Mar 22 11:53:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.freedesktop.systemd1' requested by ':1.0' (uid=1000 pid=1122 comm="dbus-update-activation-environment --verbose --sys")
+Mar 22 11:53:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Mar 22 11:53:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.freedesktop.systemd1' requested by ':1.1' (uid=1000 pid=1130 comm="dbus-update-activation-environment --verbose --sys")
+Mar 22 11:53:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Mar 22 11:53:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.freedesktop.systemd1' requested by ':1.2' (uid=1000 pid=1138 comm="dbus-update-activation-environment --verbose --sys")
+Mar 22 11:53:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Mar 22 11:53:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.kde.kglobalaccel' requested by ':1.3' (uid=1000 pid=1142 comm="dbus-send --dest=org.kde.kglobalaccel /component/o")
+Mar 22 11:53:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'org.kde.kglobalaccel'
+Mar 22 11:53:46 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.gtk.vfs.Daemon' requested by ':1.9' (uid=1000 pid=1201 comm="rsvg-convert -w 800 -h 600 -o /home/sa/???????????")
+Mar 22 11:53:46 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'org.gtk.vfs.Daemon'
+Mar 22 11:53:48 astra systemd[1]: Starting CUPS Scheduler...
+Mar 22 11:53:48 astra systemd[1]: Started CUPS Scheduler.
+Mar 22 11:53:50 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.kde.KScreen' requested by ':1.17' (uid=1000 pid=1230 comm="kscreend ")
+Mar 22 11:53:50 astra dbus-daemon[453]: [system] Activating service name='org.kde.powerdevil.discretegpuhelper' requested by ':1.46' (uid=1000 pid=1216 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev") (using servicehelper)
+Mar 22 11:53:50 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'org.kde.KScreen'
+Mar 22 11:53:50 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.freedesktop.Notifications' requested by ':1.22' (uid=1000 pid=1225 comm="astra-event-watcher ")
+Mar 22 11:53:50 astra dbus-daemon[453]: [system] Successfully activated service 'org.kde.powerdevil.discretegpuhelper'
+Mar 22 11:53:50 astra dbus-daemon[453]: [system] Activating service name='org.kde.powerdevil.chargethresholdhelper' requested by ':1.46' (uid=1000 pid=1216 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev") (using servicehelper)
+Mar 22 11:53:51 astra dbus-daemon[453]: [system] Successfully activated service 'org.kde.powerdevil.chargethresholdhelper'
+Mar 22 11:53:51 astra dbus-daemon[453]: [system] Activating service name='org.kde.powerdevil.backlighthelper' requested by ':1.46' (uid=1000 pid=1216 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev") (using servicehelper)
+Mar 22 11:53:51 astra systemd[1]: systemd-hostnamed.service: Succeeded.
+Mar 22 11:53:52 astra dbus-daemon[453]: [system] Successfully activated service 'org.kde.powerdevil.backlighthelper'
+Mar 22 11:53:52 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'org.freedesktop.Notifications'
+Mar 22 12:00:41 astra systemd[1041]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:00:41 astra systemd[810]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:00:41 astra systemd[810]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:00:41 astra systemd[1041]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:00:41 astra systemd[1041]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:00:41 astra systemd[810]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:00:41 astra dbus-daemon[453]: [system] Activating service name='ru.astralinux.FileManager.SmbWatcher' requested by ':1.83' (uid=1000 pid=7469 comm="/usr/bin/fly-fm -m /media/cdrom0 ") (using servicehelper)
+Mar 22 12:00:41 astra dbus-daemon[453]: [system] Successfully activated service 'ru.astralinux.FileManager.SmbWatcher'
+Mar 22 12:00:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='ru.astralinux.fly-fm.vfs' requested by ':1.30' (uid=1000 pid=7469 comm="/usr/bin/fly-fm -m /media/cdrom0 ")
+Mar 22 12:00:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'ru.astralinux.fly-fm.vfs'
+Mar 22 12:00:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='ru.astralinux.fly-fm.desktop' requested by ':1.30' (uid=1000 pid=7469 comm="/usr/bin/fly-fm -m /media/cdrom0 ")
+Mar 22 12:00:41 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'ru.astralinux.fly-fm.desktop'
+Mar 22 12:00:42 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='ru.astralinux.fly-fm.fops' requested by ':1.32' (uid=1000 pid=7482 comm="/usr/bin/fly-fm-service ")
+Mar 22 12:00:42 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'ru.astralinux.fly-fm.fops'
+Mar 22 12:00:42 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='ru.rusbitech.fly-thumbnails' requested by ':1.32' (uid=1000 pid=7482 comm="/usr/bin/fly-fm-service ")
+Mar 22 12:00:42 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'ru.rusbitech.fly-thumbnails'
+Mar 22 12:00:48 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='ru.astralinux.fly-fm.open' requested by ':1.32' (uid=1000 pid=7482 comm="/usr/bin/fly-fm-service ")
+Mar 22 12:00:48 astra dbus-daemon[1121]: [session uid=1000 pid=1119parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'ru.astralinux.fly-fm.open'
+Mar 22 12:03:57 astra systemd[1]: Reloading.
+Mar 22 12:03:58 astra systemd[1]: Reloading.
+Mar 22 12:03:59 astra systemd[1]: Reloading.
+Mar 22 12:04:00 astra systemd[1]: Starting vboxadd.service...
+Mar 22 12:04:00 astra vboxadd[18610]: VirtualBox Guest Additions: Starting.
+Mar 22 12:04:00 astra vboxadd[18610]: VirtualBox Guest Additions: Setting up modules
+Mar 22 12:04:00 astra vboxadd[18610]: VirtualBox Guest Additions: VirtualBox Guest Additions kernel modules 7.0.6
+Mar 22 12:04:00 astra vboxadd[18610]: r155176 are already available for kernel 5.15.0-33-generic and do not require
+Mar 22 12:04:00 astra vboxadd[18610]: to be rebuilt.
+Mar 22 12:04:00 astra vboxadd[18610]: VirtualBox Guest Additions: Running kernel modules will not be replaced until
+Mar 22 12:04:00 astra vboxadd[18610]: the system is restarted
+Mar 22 12:04:01 astra systemd[1]: Started vboxadd.service.
+Mar 22 12:04:01 astra systemd[1]: Starting vboxadd-service.service...
+Mar 22 12:04:01 astra vboxadd-service[18741]: vboxadd-service.sh: Starting VirtualBox Guest Addition service.
+Mar 22 12:04:01 astra systemd[1]: Started vboxadd-service.service.
+Mar 22 12:04:01 astra systemd-udevd[288]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18805]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18806]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18808]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18809]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18810]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18811]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+warning
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18812]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18813]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18814]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18815]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18816]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18817]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18818]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18819]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18820]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18821]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device. Stopping, too.
+Mar 22 12:04:39 astra systemd[1]: Unmounting /media/cdrom0...
+Mar 22 12:04:39 astra umount[18822]: umount: /media/cdrom0: target is busy.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Mount process exited, code=exited, status=32/n/a
+Mar 22 12:04:39 astra systemd[1]: Failed unmounting /media/cdrom0.
+Mar 22 12:04:39 astra systemd[1]: media-cdrom0.mount: Unit is bound to inactive unit dev-sr0.device, but not stopping since we tried this too often recently.
+Mar 22 12:04:49 astra systemd[1]: session-3.scope: Killing process 960 (fly-dm) with signal SIGTERM.
+Mar 22 12:04:49 astra systemd[1]: session-3.scope: Killing process 1120 (dbus-launch) with signal SIGTERM.
+Mar 22 12:04:49 astra systemd[1]: session-3.scope: Killing process 1121 (dbus-daemon) with signal SIGTERM.
+Mar 22 12:04:49 astra systemd[1]: session-3.scope: Killing process 1252 (pulseaudio) with signal SIGTERM.
+Mar 22 12:04:49 astra systemd[1]: session-3.scope: Killing process 1306 (baloo_file) with signal SIGTERM.
+Mar 22 12:04:49 astra systemd[1]: Stopping Session 3 of user sa.
+Mar 22 12:04:49 astra systemd[1]: session-3.scope: Succeeded.
+Mar 22 12:04:49 astra systemd[1]: Stopped Session 3 of user sa.
+Mar 22 12:04:49 astra systemd[1]: Stopped target Graphical Interface.
+Mar 22 12:04:49 astra systemd[1]: Stopping Authorization Manager...
+Mar 22 12:04:50 astra systemd[1]: Stopping CUPS Scheduler...
+Mar 22 12:04:50 astra systemd[1]: Stopping User Manager for UID 1000...
+Mar 22 12:04:50 astra systemd[1]: Stopping Daemon for power management...
+Mar 22 12:06:47 astra systemd: Inserted module 'autofs4'
+Mar 22 12:06:47 astra systemd: systemd 241 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+Mar 22 12:06:47 astra systemd: Detected virtualization oracle.
+Mar 22 12:06:47 astra systemd: Detected architecture x86-64.
+Mar 22 12:06:47 astra systemd: Set hostname to <astra>.
+Mar 22 12:06:47 astra systemd: Created slice User and Session Slice.
+Mar 22 12:06:47 astra systemd: Listening on udev Control Socket.
+Mar 22 12:06:47 astra systemd: Reached target Remote File Systems.
+Mar 22 12:06:47 astra systemd: Started Forward Password Requests to Wall Directory Watch.
+Mar 22 12:06:47 astra systemd: Listening on fsck to fsckd communication Socket.
+Mar 22 12:06:47 astra systemd: Listening on initctl Compatibility Named Pipe.
+Mar 22 12:06:47 astra systemd-journald[265]: Journal started
+Mar 22 12:06:47 astra systemd-journald[265]: Runtime journal (/run/log/journal/08d89582f4de48ad844cd451eafb5725) is 2.4M, max 19.7M, 17.3M free.
+Mar 22 12:06:47 astra systemd-modules-load[255]: Inserted module 'lp'
+Mar 22 12:06:47 astra systemd-modules-load[255]: Inserted module 'ppdev'
+Mar 22 12:06:47 astra systemd-modules-load[255]: Inserted module 'parport_pc'
+Mar 22 12:06:47 astra systemd-modules-load[255]: Inserted module 'usbip_core'
+Mar 22 12:06:47 astra systemd-modules-load[255]: Inserted module 'usbip_host'
+Mar 22 12:06:47 astra systemd-modules-load[255]: Inserted module 'vhci_hcd'
+Mar 22 12:06:47 astra systemd-udevd[287]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 12:06:47 astra systemd[1]: Starting Flush Journal to Persistent Storage...
+Mar 22 12:06:47 astra systemd[1]: Started udev Coldplug all Devices.
+Mar 22 12:06:47 astra systemd-journald[265]: Runtime journal (/run/log/journal/08d89582f4de48ad844cd451eafb5725) is 2.4M, max 19.7M, 17.3M free.
+Mar 22 12:06:47 astra systemd[1]: Starting Helper to synchronize boot up for ifupdown...
+Mar 22 12:06:47 astra systemd[1]: Started Flush Journal to Persistent Storage.
+Mar 22 12:06:47 astra systemd[1]: Started Helper to synchronize boot up for ifupdown.
+Mar 22 12:06:47 astra systemd[1]: Started Set the console keyboard layout.
+Mar 22 12:06:47 astra systemd[1]: Starting Show Plymouth Boot Screen...
+Mar 22 12:06:47 astra systemd[1]: Reached target Local File Systems (Pre).
+Mar 22 12:06:47 astra systemd[1]: Reached target Local File Systems.
+Mar 22 12:06:47 astra systemd[1]: Starting Tell Plymouth To Write Out Runtime Data...
+Mar 22 12:06:47 astra systemd[1]: Starting Create Volatile Files and Directories...
+Mar 22 12:06:47 astra systemd[1]: Starting Set console font and keymap...
+Mar 22 12:06:47 astra systemd[1]: Condition check resulted in Commit a transient machine-id on disk being skipped.
+Mar 22 12:06:47 astra systemd[1]: Starting Raise network interfaces...
+Mar 22 12:06:47 astra systemd[1]: plymouth-read-write.service: Succeeded.
+Mar 22 12:06:47 astra systemd[1]: Started Tell Plymouth To Write Out Runtime Data.
+Mar 22 12:06:47 astra systemd[1]: Received SIGRTMIN+20 from PID 187 (plymouthd).
+Mar 22 12:06:47 astra systemd[1]: plymouth-start.service: Succeeded.
+Mar 22 12:06:47 astra systemd[1]: Started Show Plymouth Boot Screen.
+Mar 22 12:06:47 astra systemd[1]: Started Set console font and keymap.
+Mar 22 12:06:47 astra systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+Mar 22 12:06:47 astra systemd[1]: Condition check resulted in Dispatch Password Requests to Console Directory Watch being skipped.
+Mar 22 12:06:47 astra systemd[1]: Reached target Local Encrypted Volumes.
+Mar 22 12:06:48 astra systemd[1]: Started Create Volatile Files and Directories.
+Mar 22 12:06:48 astra systemd[1]: Starting Security Auditing Service...
+Mar 22 12:06:48 astra auditd[320]: Started dispatcher: /sbin/audispd pid: 322
+Mar 22 12:06:48 astra auditd[320]: Init complete, auditd 2.8.5 listening for events (startup state enable)
+Mar 22 12:06:48 astra augenrules[324]: /sbin/augenrules: No change
+Mar 22 12:06:48 astra augenrules[324]: No rules
+Mar 22 12:06:48 astra augenrules[324]: enabled 1
+Mar 22 12:06:48 astra augenrules[324]: failure 1
+Mar 22 12:06:48 astra augenrules[324]: pid 320
+Mar 22 12:06:48 astra augenrules[324]: rate_limit 0
+Mar 22 12:06:48 astra augenrules[324]: backlog_limit 8192
+Mar 22 12:06:48 astra augenrules[324]: lost 0
+Mar 22 12:06:48 astra augenrules[324]: backlog 4
+Mar 22 12:06:48 astra augenrules[324]: backlog_wait_time 15000
+Mar 22 12:06:48 astra augenrules[324]: enabled 1
+Mar 22 12:06:48 astra augenrules[324]: failure 1
+Mar 22 12:06:48 astra augenrules[324]: pid 320
+Mar 22 12:06:48 astra augenrules[324]: rate_limit 0
+Mar 22 12:06:48 astra augenrules[324]: backlog_limit 8192
+Mar 22 12:06:48 astra augenrules[324]: lost 0
+Mar 22 12:06:48 astra augenrules[324]: backlog 4
+Mar 22 12:06:48 astra augenrules[324]: backlog_wait_time 15000
+Mar 22 12:06:48 astra augenrules[324]: enabled 1
+Mar 22 12:06:48 astra augenrules[324]: failure 1
+Mar 22 12:06:48 astra augenrules[324]: pid 320
+Mar 22 12:06:48 astra augenrules[324]: rate_limit 0
+Mar 22 12:06:48 astra augenrules[324]: backlog_limit 8192
+Mar 22 12:06:48 astra augenrules[324]: lost 0
+Mar 22 12:06:48 astra augenrules[324]: backlog 68
+Mar 22 12:06:48 astra augenrules[324]: backlog_wait_time 0
+Mar 22 12:06:48 astra systemd[1]: Started Security Auditing Service.
+Mar 22 12:06:48 astra systemd[1]: Starting Update UTMP about System Boot/Shutdown...
+Mar 22 12:06:48 astra systemd[1]: Started Update UTMP about System Boot/Shutdown.
+Mar 22 12:06:48 astra systemd[1]: Started Raise network interfaces.
+Mar 22 12:06:48 astra systemd-udevd[288]: Using default interface naming scheme 'v240'.
+Mar 22 12:06:48 astra systemd-udevd[288]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Mar 22 12:06:49 astra systemd-udevd[288]: link_config: autonegotiation is unset or enabled, the speed and duplex are not writable.
+Mar 22 12:06:49 astra systemd[1]: Found device VBOX_HARDDISK 5.
+Mar 22 12:06:49 astra systemd[1]: Listening on Load/Save RF Kill Switch Status /dev/rfkill Watch.
+Mar 22 12:06:49 astra systemd[1]: Activating swap /dev/disk/by-uuid/c0a54cb9-5376-4d45-b442-d745469b5fc6...
+Mar 22 12:06:49 astra systemd[1]: Activated swap /dev/disk/by-uuid/c0a54cb9-5376-4d45-b442-d745469b5fc6.
+Mar 22 12:06:49 astra systemd[1]: Reached target Swap.
+Mar 22 12:06:49 astra systemd[1]: Reached target System Initialization.
+Mar 22 12:06:49 astra systemd[1]: Listening on Avahi mDNS/DNS-SD Stack Activation Socket.
+Mar 22 12:06:49 astra systemd[1]: Started Daily man-db regeneration.
+Mar 22 12:06:49 astra systemd[1]: Started Trigger anacron every hour.
+Mar 22 12:06:49 astra systemd[1]: Listening on CUPS Scheduler.
+Mar 22 12:06:49 astra systemd[1]: Listening on D-Bus System Message Bus Socket.
+Mar 22 12:06:49 astra systemd[1]: Reached target Sockets.
+Mar 22 12:06:49 astra systemd[1]: Started CUPS Scheduler.
+Mar 22 12:06:49 astra systemd[1]: Reached target Paths.
+Mar 22 12:06:49 astra systemd[1]: Reached target Basic System.
+Mar 22 12:06:49 astra systemd[1]: Started Regular background program processing daemon.
+Mar 22 12:06:49 astra systemd[1]: Starting Avahi mDNS/DNS-SD Stack...
+Mar 22 12:06:49 astra systemd[1]: Starting Lock removable media mounts...
+Mar 22 12:06:49 astra systemd[1]: Starting Disk Manager...
+Mar 22 12:06:49 astra systemd[1]: Starting Login Service...
+Mar 22 12:06:49 astra systemd[1]: Condition check resulted in getty on tty2-tty6 if dbus and logind are not available being skipped.
+Mar 22 12:06:49 astra avahi-daemon[414]: Found user 'avahi' (UID 113) and group 'avahi' (GID 126).
+Mar 22 12:06:49 astra avahi-daemon[414]: Successfully dropped root privileges.
+Mar 22 12:06:49 astra avahi-daemon[414]: avahi-daemon 0.7 starting up.
+Mar 22 12:06:49 astra avahi-daemon[414]: WARNING: No NSS support for mDNS detected, consider installing nss-mdns!
+Mar 22 12:06:49 astra systemd[1]: Starting Lock/Unlock ptrace for user...
+Mar 22 12:06:49 astra systemd[1]: Starting System Logger Daemon...
+Mar 22 12:06:49 astra systemd[1]: Started Daily apt download activities.
+Mar 22 12:06:49 astra systemd[1]: Started Daily apt upgrade and clean activities.
+Mar 22 12:06:49 astra systemd[1]: Starting vboxadd.service...
+Mar 22 12:06:49 astra systemd[1]: Started Daily rotation of log files.
+Mar 22 12:06:49 astra systemd[1]: Started Daily Cleanup of Temporary Directories.
+Mar 22 12:06:49 astra systemd[1]: Reached target Timers.
+Mar 22 12:06:49 astra systemd[1]: Starting Initialize Parsec Subsystem...
+Mar 22 12:06:49 astra systemd[1]: Started Run anacron jobs.
+Mar 22 12:06:49 astra systemd[1]: Started Swap Wiper.
+Mar 22 12:06:50 astra systemd[1]: Started D-Bus System Message Bus.
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra systemd[1]: Starting WPA supplicant...
+Mar 22 12:06:50 astra dbus-daemon[447]: dbus[447]: Unknown username "geoclue" in message bus configuration file
+Mar 22 12:06:50 astra systemd[1]: Starting Network Manager...
+Mar 22 12:06:50 astra avahi-daemon[414]: Successfully called chroot().
+Mar 22 12:06:50 astra avahi-daemon[414]: Successfully dropped remaining capabilities.
+Mar 22 12:06:50 astra avahi-daemon[414]: No service file found in /etc/avahi/services.
+Mar 22 12:06:50 astra avahi-daemon[414]: Network interface enumeration completed.
+Mar 22 12:06:50 astra avahi-daemon[414]: Server startup complete. Host name is astra.local. Local service cookie is 1031255706.
+Mar 22 12:06:50 astra wpa_supplicant[458]: Successfully initialized wpa_supplicant
+Mar 22 12:06:50 astra dbus-daemon[447]: [system] Activating systemd to hand-off: service name='org.freedesktop.PolicyKit1' unit='polkit.service' requested by ':1.1' (uid=0 pid=417 comm="/usr/lib/udisks2/udisksd ")
+Mar 22 12:06:50 astra dbus-daemon[447]: [system] Successfully activated service 'org.freedesktop.systemd1'
+Mar 22 12:06:50 astra dbus-daemon[447]: [system] Activating via systemd: service name='org.freedesktop.hostname1' unit='dbus-org.freedesktop.hostname1.service' requested by ':1.5' (uid=0 pid=460 comm="/usr/sbin/NetworkManager --no-daemon ")
+Mar 22 12:06:51 astra systemd[1]: astra-ptrace-lock.service: Succeeded.
+Mar 22 12:06:51 astra systemd[1]: Started Lock/Unlock ptrace for user.
+Mar 22 12:06:51 astra systemd[1]: Started Network Manager.
+Mar 22 12:06:51 astra syslog-ng[427]: [2023-03-22T12:06:51.183278] Current position not matches to the saved cursor position, seek to head; cursor='s=958ac281324d463e8abb598edfff2ec9;i=c2b;b=59a96e1c923b49eaa373a985669834ab;m=29b76bdd;t=5f77973d542f7;x=e3250cad0520d160', error='Success (0)'
+Mar 22 12:06:51 astra systemd[1]: Starting Hostname Service...
+Mar 22 12:06:51 astra systemd[1]: Starting Authorization Manager...
+Mar 22 12:06:51 astra alsactl[563]: alsactl 1.1.8 daemon started
+Mar 22 12:06:51 astra systemd[1]: Started Manage Sound Card State (restore and store).
+Mar 22 12:06:51 astra polkitd[558]: started daemon version 0.105 using authority implementation `local' version `0.105'
+Mar 22 12:06:51 astra systemd[1]: Starting Save/Restore Sound Card State...
+Mar 22 12:06:51 astra dbus-daemon[447]: [system] Successfully activated service 'org.freedesktop.PolicyKit1'
+Mar 22 12:06:51 astra systemd[1]: Started WPA supplicant.
+Mar 22 12:06:51 astra systemd[1]: Started Login Service.
+Mar 22 12:06:51 astra systemd[1]: Started Avahi mDNS/DNS-SD Stack.
+Mar 22 12:06:51 astra systemd[1]: Reached target Network.
+Mar 22 12:06:51 astra systemd[1]: Starting CUPS Scheduler...
+Mar 22 12:06:51 astra systemd[1]: Started Save/Restore Sound Card State.
+Mar 22 12:06:51 astra systemd[1]: Started Authorization Manager.
+Mar 22 12:06:51 astra systemd[1]: Reached target Sound Card.
+Mar 22 12:06:51 astra systemd[1]: astra-mount-lock.service: Succeeded.
+Mar 22 12:06:51 astra systemd[1]: Started Lock removable media mounts.
+Mar 22 12:06:51 astra systemd[1]: Reached target astra-safepolicy.target.
+Mar 22 12:06:51 astra systemd[1]: Starting Permit User Sessions...
+Mar 22 12:06:51 astra systemd-udevd[287]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 12:06:51 astra systemd[1]: Started Permit User Sessions.
+Mar 22 12:06:51 astra systemd[1]: Starting Terminate Plymouth Boot Screen...
+Mar 22 12:06:52 astra systemd[1]: Starting Hold until boot process finishes up...
+Mar 22 12:06:52 astra systemd[1]: Started The FLY get exec service.
+Mar 22 12:06:52 astra fly-getexe[620]: flygetexe helper: parsec enabled = true
+Mar 22 12:06:52 astra systemd[1]: Started CUPS Scheduler.
+Mar 22 12:06:52 astra systemd[1]: plymouth-quit.service: Succeeded.
+Mar 22 12:06:52 astra systemd[1]: Started Terminate Plymouth Boot Screen.
+Mar 22 12:06:52 astra systemd[1]: plymouth-quit-wait.service: Succeeded.
+Mar 22 12:06:52 astra systemd[1]: Started Hold until boot process finishes up.
+Mar 22 12:06:52 astra systemd[1]: Received SIGRTMIN+21 from PID 187 (n/a).
+Mar 22 12:06:52 astra systemd[1]: Received SIGRTMIN+21 from PID 187 (n/a).
+Mar 22 12:06:52 astra systemd[1]: Started Getty on tty1.
+Mar 22 12:06:52 astra systemd[1]: Reached target Login Prompts.
+Mar 22 12:06:52 astra dbus-daemon[447]: [system] Successfully activated service 'org.freedesktop.hostname1'
+Mar 22 12:06:52 astra systemd[1]: Started Hostname Service.
+Mar 22 12:06:52 astra dbus-daemon[447]: [system] Activating via systemd: service name='org.freedesktop.nm_dispatcher' unit='dbus-org.freedesktop.nm-dispatcher.service' requested by ':1.5' (uid=0 pid=460 comm="/usr/sbin/NetworkManager --no-daemon ")
+Mar 22 12:06:52 astra systemd[1]: Starting Network Manager Script Dispatcher Service...
+Mar 22 12:06:52 astra systemd[1]: Started Disk Manager.
+Mar 22 12:06:52 astra dbus-daemon[447]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Mar 22 12:06:52 astra systemd[1]: Started Network Manager Script Dispatcher Service.
+Mar 22 12:06:52 astra nm-dispatcher[666]: req:1 'hostname': new request (2 scripts)
+Mar 22 12:06:52 astra nm-dispatcher[666]: req:1 'hostname': start running ordered scripts...
+Mar 22 12:06:52 astra nm-dispatcher[666]: req:2 'connectivity-change': new request (2 scripts)
+Mar 22 12:06:52 astra nm-dispatcher[666]: req:2 'connectivity-change': start running ordered scripts...
+Mar 22 12:06:52 astra parsec_systemd_init[433]: Set up PARSEC ENV...done.
+Mar 22 12:06:53 astra avahi-daemon[414]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::4be:995a:926a:e195.
+Mar 22 12:06:53 astra avahi-daemon[414]: New relevant interface eth0.IPv6 for mDNS.
+Mar 22 12:06:53 astra avahi-daemon[414]: Registering new address record for fe80::4be:995a:926a:e195 on eth0.*.
+Mar 22 12:06:53 astra parsec_systemd_init[433]: Clear Private Directory...done.
+Mar 22 12:06:53 astra parsec_systemd_init[433]: Setting default audit...   1 0:0
+Mar 22 12:06:53 astra parsec_systemd_init[433]: done.
+Mar 22 12:06:53 astra parsec_systemd_init[433]: Set NO CHMOD +X flag...done.
+Mar 22 12:06:53 astra dhclient[716]: DHCPREQUEST for 10.0.2.15 on eth0 to 255.255.255.255 port 67
+Mar 22 12:06:53 astra dhclient[716]: DHCPACK of 10.0.2.15 from 10.0.2.2
+Mar 22 12:06:53 astra systemd[1]: Reloading.
+Mar 22 12:06:53 astra avahi-daemon[414]: Joining mDNS multicast group on interface eth0.IPv4 with address 10.0.2.15.
+Mar 22 12:06:53 astra avahi-daemon[414]: New relevant interface eth0.IPv4 for mDNS.
+Mar 22 12:06:53 astra avahi-daemon[414]: Registering new address record for 10.0.2.15 on eth0.IPv4.
+Mar 22 12:06:53 astra dhclient[716]: bound to 10.0.2.15 -- renewal in 36564 seconds.
+Mar 22 12:06:53 astra nm-dispatcher[666]: req:3 'up' [eth0]: new request (2 scripts)
+Mar 22 12:06:53 astra nm-dispatcher[666]: req:3 'up' [eth0]: start running ordered scripts...
+Mar 22 12:06:53 astra nm-dispatcher[666]: req:4 'connectivity-change': new request (2 scripts)
+Mar 22 12:06:53 astra nm-dispatcher[666]: req:4 'connectivity-change': start running ordered scripts...
+Mar 22 12:06:54 astra systemd[1]: getty@tty1.service: Current command vanished from the unit file, execution of the command list won't be resumed.
+Mar 22 12:06:54 astra vboxadd[428]: VirtualBox Guest Additions: Starting.
+Mar 22 12:06:54 astra vboxadd[428]: VirtualBox Guest Additions: Setting up modules
+Mar 22 12:06:54 astra vboxadd[428]: VirtualBox Guest Additions: VirtualBox Guest Additions kernel modules 7.0.6
+Mar 22 12:06:54 astra vboxadd[428]: r155176 are already available for kernel 5.15.0-33-generic and do not require
+Mar 22 12:06:54 astra vboxadd[428]: to be rebuilt.
+Mar 22 12:06:55 astra systemd[1]: Started System Logger Daemon.
+Mar 22 12:06:55 astra systemd[1]: Started Initialize Parsec Subsystem.
+Mar 22 12:06:55 astra vboxadd[428]: VirtualBox Guest Additions: Running kernel modules will not be replaced until
+Mar 22 12:06:55 astra vboxadd[428]: the system is restarted
+Mar 22 12:06:55 astra systemd-udevd[287]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 12:06:56 astra systemd[1]: Started vboxadd.service.
+Mar 22 12:06:56 astra systemd[1]: Starting The FLY login manager...
+Mar 22 12:06:56 astra systemd[1]: Starting vboxadd-service.service...
+Mar 22 12:06:56 astra systemd[1]: Started The FLY login manager.
+Mar 22 12:06:56 astra systemd[1]: Starting Screens orientation monitor...
+Mar 22 12:06:56 astra vboxadd-service[915]: vboxadd-service.sh: Starting VirtualBox Guest Addition service.
+Mar 22 12:06:56 astra fly-dm[917]: plymouth is NOT running
+Mar 22 12:06:56 astra fly-dm[926]: register systemd session for Xorg with name=:0 seat=null vt7, user=fly-dm
+Mar 22 12:06:56 astra systemd[1]: Started vboxadd-service.service.
+Mar 22 12:06:56 astra astra-orientation[918]: QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-astra-orientation'
+Mar 22 12:06:56 astra systemd[1]: Created slice User Slice of UID 107.
+Mar 22 12:06:56 astra systemd[1]: Starting User Runtime Directory /run/user/107...
+Mar 22 12:06:56 astra systemd[1]: Started User Runtime Directory /run/user/107.
+Mar 22 12:06:56 astra systemd[1]: Starting User Manager for UID 107...
+Mar 22 12:06:56 astra systemd-udevd[910]: Process '/usr/bin/fly-monitor-hotplug.sh' failed with exit code 1.
+Mar 22 12:06:56 astra systemd[952]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:06:56 astra systemd[952]: Failed to stat() device node file /dev/sda5: Permission denied
+Mar 22 12:06:56 astra systemd[952]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Mar 22 12:06:56 astra systemd[952]: Reached target Timers.
+Mar 22 12:06:56 astra systemd[952]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Mar 22 12:06:56 astra systemd[952]: Listening on GnuPG cryptographic agent and passphrase cache.
+Mar 22 12:06:56 astra systemd[952]: Reached target Paths.
+Mar 22 12:06:56 astra systemd[952]: Listening on GnuPG network certificate management daemon.
+Mar 22 12:06:56 astra systemd[952]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Mar 22 12:06:56 astra systemd[952]: Reached target Sockets.
+Mar 22 12:06:56 astra systemd[952]: Reached target Basic System.
+Mar 22 12:06:56 astra systemd[1]: Started User Manager for UID 107.
+Mar 22 12:06:56 astra systemd[1]: Started Session c1 of user fly-dm.
+Mar 22 12:06:56 astra systemd[952]: Reached target Default.
+Mar 22 12:06:56 astra systemd[952]: Startup finished in 213ms.
+Mar 22 12:06:57 astra systemd[1]: astra-orientation.service: Main process exited, code=killed, status=10/USR1
+Mar 22 12:06:57 astra systemd[1]: astra-orientation.service: Failed with result 'signal'.
+Mar 22 12:06:57 astra systemd[1]: Failed to start Screens orientation monitor.
+Mar 22 12:06:57 astra systemd[1]: Reached target Multi-User System.
+Mar 22 12:06:57 astra systemd[1]: Reached target Graphical Interface.
+Mar 22 12:06:57 astra systemd[1]: Starting Update UTMP about System Runlevel Changes...
+Mar 22 12:06:57 astra systemd[1]: systemd-update-utmp-runlevel.service: Succeeded.
+Mar 22 12:06:57 astra systemd[1]: Started Update UTMP about System Runlevel Changes.
+Mar 22 12:06:57 astra systemd[1]: Startup finished in 4.457s (kernel) + 11.164s (userspace) = 15.621s.
+Mar 22 12:06:58 astra systemd[1]: astra-orientation.service: Service RestartSec=100ms expired, scheduling restart.
+Mar 22 12:06:58 astra systemd[1]: astra-orientation.service: Scheduled restart job, restart counter is at 1.
+Mar 22 12:06:58 astra systemd[1]: Stopped Screens orientation monitor.
+Mar 22 12:06:58 astra systemd[1]: Starting Screens orientation monitor...
+Mar 22 12:06:58 astra astra-orientation[990]: QStandardPaths: XDG_RUNTIME_DIR not set, defaulting to '/tmp/runtime-astra-orientation'
+Mar 22 12:06:58 astra dbus-daemon[447]: [system] Activating via systemd: service name='org.freedesktop.UPower' unit='upower.service' requested by ':1.19' (uid=107 pid=988 comm="/usr/bin/kscreend-setup ")
+Mar 22 12:06:58 astra systemd[1]: Starting Daemon for power management...
+Mar 22 12:06:58 astra systemd[1]: Started Screens orientation monitor.
+Mar 22 12:06:58 astra dbus-daemon[447]: [system] Successfully activated service 'org.freedesktop.UPower'
+Mar 22 12:06:58 astra systemd[1]: Started Daemon for power management.
+Mar 22 12:07:04 astra systemd[1]: NetworkManager-dispatcher.service: Succeeded.
+Mar 22 12:07:13 astra systemd[1]: Created slice User Slice of UID 1000.
+Mar 22 12:07:13 astra systemd[1]: Starting User Runtime Directory /run/user/1000...
+Mar 22 12:07:13 astra systemd[952]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:07:13 astra systemd[1]: Started User Runtime Directory /run/user/1000.
+Mar 22 12:07:13 astra systemd[1]: Starting User Manager for UID 1000...
+Mar 22 12:07:13 astra systemd[1052]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:07:13 astra systemd[1052]: Failed to stat() device node file /dev/sda5: Permission denied
+Mar 22 12:07:13 astra systemd[1052]: Listening on GnuPG cryptographic agent (ssh-agent emulation).
+Mar 22 12:07:13 astra systemd[1052]: Reached target Timers.
+Mar 22 12:07:13 astra systemd[1052]: Listening on GnuPG cryptographic agent and passphrase cache (access for web browsers).
+Mar 22 12:07:13 astra systemd[1052]: Listening on GnuPG cryptographic agent and passphrase cache (restricted).
+Mar 22 12:07:13 astra systemd[1052]: Reached target Paths.
+Mar 22 12:07:13 astra systemd[1052]: Listening on GnuPG cryptographic agent and passphrase cache.
+Mar 22 12:07:13 astra systemd[1052]: Listening on GnuPG network certificate management daemon.
+Mar 22 12:07:13 astra systemd[1052]: Reached target Sockets.
+Mar 22 12:07:13 astra systemd[1052]: Reached target Basic System.
+Mar 22 12:07:13 astra systemd[1]: Started User Manager for UID 1000.
+Mar 22 12:07:13 astra systemd[1]: Started Session 3 of user sa.
+Mar 22 12:07:13 astra systemd[1052]: Reached target Default.
+Mar 22 12:07:13 astra systemd[1052]: Startup finished in 192ms.
+Mar 22 12:07:14 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.freedesktop.systemd1' requested by ':1.0' (uid=1000 pid=1133 comm="dbus-update-activation-environment --verbose --sys")
+Mar 22 12:07:14 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Mar 22 12:07:14 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.freedesktop.systemd1' requested by ':1.1' (uid=1000 pid=1141 comm="dbus-update-activation-environment --verbose --sys")
+Mar 22 12:07:14 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Mar 22 12:07:14 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.freedesktop.systemd1' requested by ':1.2' (uid=1000 pid=1149 comm="dbus-update-activation-environment --verbose --sys")
+Mar 22 12:07:14 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activated service 'org.freedesktop.systemd1' failed: Process org.freedesktop.systemd1 exited with status 1
+Mar 22 12:07:14 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.kde.kglobalaccel' requested by ':1.3' (uid=1000 pid=1153 comm="dbus-send --dest=org.kde.kglobalaccel /component/o")
+Mar 22 12:07:14 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'org.kde.kglobalaccel'
+Mar 22 12:07:16 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.gtk.vfs.Daemon' requested by ':1.8' (uid=1000 pid=1221 comm="/usr/lib/at-spi2-core/at-spi-bus-launcher --launch")
+Mar 22 12:07:16 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'org.gtk.vfs.Daemon'
+Mar 22 12:07:18 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.kde.KScreen' requested by ':1.15' (uid=1000 pid=1231 comm="kscreend ")
+Mar 22 12:07:19 astra dbus-daemon[447]: [system] Activating service name='org.kde.powerdevil.discretegpuhelper' requested by ':1.45' (uid=1000 pid=1217 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev") (using servicehelper)
+Mar 22 12:07:19 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Activating service name='org.freedesktop.Notifications' requested by ':1.20' (uid=1000 pid=1226 comm="astra-event-watcher ")
+Mar 22 12:07:19 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'org.kde.KScreen'
+Mar 22 12:07:19 astra dbus-daemon[447]: [system] Successfully activated service 'org.kde.powerdevil.discretegpuhelper'
+Mar 22 12:07:19 astra dbus-daemon[447]: [system] Activating service name='org.kde.powerdevil.chargethresholdhelper' requested by ':1.45' (uid=1000 pid=1217 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev") (using servicehelper)
+Mar 22 12:07:20 astra dbus-daemon[447]: [system] Successfully activated service 'org.kde.powerdevil.chargethresholdhelper'
+Mar 22 12:07:20 astra dbus-daemon[447]: [system] Activating service name='org.kde.powerdevil.backlighthelper' requested by ':1.45' (uid=1000 pid=1217 comm="/usr/lib/x86_64-linux-gnu/libexec/org_kde_powerdev") (using servicehelper)
+Mar 22 12:07:20 astra dbus-daemon[447]: [system] Successfully activated service 'org.kde.powerdevil.backlighthelper'
+Mar 22 12:07:20 astra dbus-daemon[1132]: [session uid=1000 pid=1130parsec= Уровень_0:High:Нет:0x0!. Caps (eff,inh,prm) 0-0-0] Successfully activated service 'org.freedesktop.Notifications'
+Mar 22 12:07:22 astra systemd[1]: systemd-hostnamed.service: Succeeded.
+Mar 22 12:07:55 astra systemd[1]: proc-sys-fs-binfmt_misc.automount: Got automount request for /proc/sys/fs/binfmt_misc, triggered by 1473 (sysctl)
+Mar 22 12:07:55 astra systemd[1]: Mounting Arbitrary Executable File Formats File System...
+Mar 22 12:07:55 astra systemd[1052]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:07:55 astra systemd[952]: Failed to stat() device node file /dev/sda1: Permission denied
+Mar 22 12:07:55 astra systemd[1]: Mounted Arbitrary Executable File Formats File System.
+Mar 22 12:11:36 astra dbus-daemon[447]: [system] Activating service name='org.kde.powerdevil.chargethresholdhelper' requested by ':1.83' (uid=1000 pid=1615 comm="fly-kcmshell5 --desktopfile fly-admin-power powerd") (using servicehelper)
+Mar 22 12:11:36 astra dbus-daemon[447]: [system] Successfully activated service 'org.kde.powerdevil.chargethresholdhelper'
+Mar 22 12:12:02 astra systemd[1]: session-3.scope: Killing process 1131 (dbus-launch) with signal SIGTERM.
+Mar 22 12:12:02 astra systemd[1]: session-3.scope: Killing process 1176 (VBoxClient) with signal SIGTERM.
+Mar 22 12:12:02 astra systemd[1]: session-3.scope: Killing process 1177 (VBoxClient) with signal SIGTERM.
+Mar 22 12:12:02 astra systemd[1]: session-3.scope: Killing process 1192 (VBoxClient) with signal SIGTERM.
+Mar 22 12:12:02 astra systemd[1]: session-3.scope: Killing process 1193 (VBoxClient) with signal SIGTERM.
+Mar 22 12:12:02 astra systemd[1]: session-3.scope: Killing process 1280 (pulseaudio) with signal SIGTERM.
+Mar 22 12:12:02 astra systemd[1]: session-3.scope: Killing process 1403 (dbus-launch) with signal SIGTERM.
+Mar 22 12:12:02 astra systemd[1]: session-3.scope: Killing process 1535 (gpg-agent) with signal SIGTERM.
+Mar 22 12:12:02 astra systemd[1]: Stopping Session 3 of user sa.
+Mar 22 12:12:02 astra systemd[1]: session-c1.scope: Succeeded.
+Mar 22 12:12:02 astra systemd[1]: Stopped target Graphical Interface.
+Mar 22 12:49:54 astra systemd: Inserted module 'autofs4'
+Mar 22 12:49:54 astra systemd: systemd 241 running in system mode. (+PAM +AUDIT +SELINUX +IMA +APPARMOR +SMACK +SYSVINIT +UTMP +LIBCRYPTSETUP +GCRYPT +GNUTLS +ACL +XZ +LZ4 +SECCOMP +BLKID +ELFUTILS +KMOD -IDN2 +IDN -PCRE2 default-hierarchy=hybrid)
+Mar 22 12:49:54 astra systemd: Detected virtualization oracle.
+Mar 22 12:49:54 astra systemd: Detected architecture x86-64.
+Mar 22 12:49:54 astra systemd: Set hostname to <astra>.
+Mar 22 12:49:54 astra systemd: Listening on udev Control Socket.
+Mar 22 12:49:54 astra systemd: Created slice system-getty.slice.
+Mar 22 12:49:54 astra systemd: Reached target Remote File Systems.
+Mar 22 12:49:54 astra systemd: Started Forward Password Requests to Wall Directory Watch.
+Mar 22 12:49:54 astra systemd: Listening on udev Kernel Socket.
+Mar 22 12:49:54 astra systemd: Listening on Journal Audit Socket.
+Mar 22 12:49:54 astra systemd-journald[272]: Journal started
+Mar 22 12:49:54 astra systemd-journald[272]: Runtime journal (/run/log/journal/08d89582f4de48ad844cd451eafb5725) is 2.4M, max 19.7M, 17.3M free.
+Mar 22 12:49:54 astra systemd-modules-load[268]: Inserted module 'lp'
+Mar 22 12:49:54 astra systemd-modules-load[268]: Inserted module 'ppdev'
+Mar 22 12:49:54 astra systemd-modules-load[268]: Inserted module 'parport_pc'
+Mar 22 12:49:54 astra systemd-modules-load[268]: Inserted module 'usbip_core'
+Mar 22 12:49:54 astra systemd-modules-load[268]: Inserted module 'usbip_host'
+Mar 22 12:49:54 astra systemd-modules-load[268]: Inserted module 'vhci_hcd'
+Mar 22 12:49:54 astra systemd-udevd[289]: Network interface NamePolicy= disabled on kernel command line, ignoring.
+Mar 22 12:49:54 astra systemd[1]: Starting Flush Journal to Persistent Storage...
+Mar 22 12:49:54 astra systemd[1]: Started udev Kernel Device Manager.
+Mar 22 12:49:54 astra systemd[1]: Starting Show Plymouth Boot Screen...
+Mar 22 12:49:54 astra systemd-journald[272]: Runtime journal (/run/log/journal/08d89582f4de48ad844cd451eafb5725) is 2.4M, max 19.7M, 17.3M free.
+Mar 22 12:49:54 astra systemd[1]: plymouth-start.service: Succeeded.
+Mar 22 12:49:54 astra systemd[1]: Started Show Plymouth Boot Screen.
+Mar 22 12:49:54 astra systemd[1]: Started Flush Journal to Persistent Storage.
+Mar 22 12:49:54 astra systemd[1]: Starting Create Volatile Files and Directories...
+Mar 22 12:49:54 astra systemd[1]: Condition check resulted in Dispatch Password Requests to Console Directory Watch being skipped.
+Mar 22 12:49:54 astra systemd[1]: Reached target Local Encrypted Volumes.
+Mar 22 12:49:54 astra systemd[1]: Started Forward Password Requests to Plymouth Directory Watch.
+Mar 22 12:49:54 astra systemd[1]: Started Create Volatile Files and Directories.
+Mar 22 12:49:54 astra systemd[1]: Starting Security Auditing Service...

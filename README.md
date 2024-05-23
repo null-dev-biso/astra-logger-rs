@@ -19,5 +19,5 @@ Options:
 
 ```sh
 ПРИМЕР
-./alog.sh -p ./log/daemon.log -l " " -j ./log/daemon.json
+./alog.sh -p ./log/daemon.log -l " " -j ./log/daemon.json --tui
 ```
