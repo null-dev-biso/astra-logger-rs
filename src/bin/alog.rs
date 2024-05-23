@@ -54,7 +54,7 @@ async fn main() {
         "warning" => Some(LogFormatter::Warning),
         "error" => Some(LogFormatter::Error),
         "trace" => Some(LogFormatter::Trace),
-        "" => None, // default case: no filter
+        "" => None,
         _ => {
             eprintln!("Invalid log level: {}", args.log_level);
             return;

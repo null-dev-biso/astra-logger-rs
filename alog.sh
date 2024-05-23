@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# функция для запуска команды alog
+
 run_alog() {
 	cargo run --bin alog -- "$@"
 }
 
-# обработка аргументов командной строки
+
 if [ "$#" -eq 0 ]; then
 	echo "usage: $0 [-h] [command]"
 	echo "commands:"
