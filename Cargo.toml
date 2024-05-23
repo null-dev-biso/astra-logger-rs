@@ -9,11 +9,19 @@ chrono = "0.4.38"
 clap = { version = "4.5.3", features = ["derive"] }
 crossterm = "0.27.0"
 eyre = "0.6.12"
+ndarray = "0.15.6"
+notify = "6.1.1"
+rand = "0.8.5"
 regex = "1.10.4"
-serde = {version = "1.0.198", features = ["derive"]}
+serde = { version = "1.0.198", features = ["derive"] }
 serde_json = "1.0.116"
 sysinfo = "0.30.12"
-tokio = { version = "1.26.0", features = ["rt-multi-thread", "rt", "signal", "macros"] }
+tokio = { version = "1.26.0", features = [
+	"rt-multi-thread",
+	"rt",
+	"signal",
+	"macros",
+] }
 tui = "0.19.0"
 
 [[bin]]
